@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "costmap_converter_msgs__py",
+		"source" : "/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter_msgs/costmap_converter_msgs__py"
+	}
+}

@@ -1,0 +1,50 @@
+gmake[2]: *** Deleting file 'rosidl_generator_c/teb_msgs/msg/feedback_msg.h'
+Traceback (most recent call last):
+  File "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 42, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 38, in main
+    generate_c(args.generator_arguments_file, args.disable_description_codegen)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_c/__init__.py", line 41, in generate_c
+    return generate_files(
+           ^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_pycommon/__init__.py", line 102, in generate_files
+gmake[2]: *** Deleting file 'rosidl_generator_cpp/teb_msgs/msg/feedback_msg.hpp'
+    idl_file = parse_idl_file(locator)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+gmake[2]: *** [CMakeFiles/teb_msgs__cpp.dir/build.make:175: rosidl_generator_cpp/teb_msgs/msg/feedback_msg.hpp] Interrupt
+    content = parse_idl_string(string, png_file=png_file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    return _parser.parse(idl_string)
+gmake[1]: *** [CMakeFiles/Makefile2:293: CMakeFiles/teb_msgs__cpp.dir/all] Interrupt
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 658, in parse
+    return self.parser.parse(text, start=start, on_error=on_error)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 104, in parse
+    return self.parser.parse(stream, chosen_start, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 305, in parse
+    return transformer.transform(solutions[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 401, in transform
+    self.visit(root)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 538, in visit
+    super(ForestToParseTree, self).visit(root)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 359, in visit
+    next_node = vini(current)
+                ^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 626, in visit_symbol_node_in
+    super(ForestToParseTree, self).visit_symbol_node_in(node)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 424, in visit_symbol_node_in
+    self.data[id(node)] = []
+              ^^^^^^^^
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/teb_msgs__rosidl_generator_c.dir/build.make:161: rosidl_generator_c/teb_msgs/msg/feedback_msg.h] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:240: CMakeFiles/teb_msgs__rosidl_generator_c.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,1 @@
+/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter_msgs/rosidl_generator_cpp/costmap_converter_msgs/msg/detail/obstacle_msg__traits.hpp

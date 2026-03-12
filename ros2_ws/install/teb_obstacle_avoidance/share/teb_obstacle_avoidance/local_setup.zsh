@@ -1,0 +1,1 @@
+/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_obstacle_avoidance/ament_cmake_environment_hooks/local_setup.zsh

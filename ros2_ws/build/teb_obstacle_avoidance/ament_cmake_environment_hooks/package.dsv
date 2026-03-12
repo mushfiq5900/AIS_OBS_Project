@@ -1,0 +1,4 @@
+source;share/teb_obstacle_avoidance/local_setup.bash
+source;share/teb_obstacle_avoidance/local_setup.dsv
+source;share/teb_obstacle_avoidance/local_setup.sh
+source;share/teb_obstacle_avoidance/local_setup.zsh

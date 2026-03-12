@@ -1,0 +1,18 @@
+In file included from /opt/ros/jazzy/include/pluginlib/pluginlib/class_loader_imp.hpp:57,
+                 from /opt/ros/jazzy/include/pluginlib/pluginlib/class_loader.hpp:334,
+                 from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_local_planner/teb_local_planner/include/teb_local_planner/teb_local_planner_ros.h:42,
+                 from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_local_planner/teb_local_planner/src/teb_local_planner_ros.cpp:39:
+/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::Rate::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)’:
+/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41: warning: too many arguments for format [-Wformat-extra-args]
+  197 |         RCLCPP_DEBUG(nh_->get_logger(), "costmap_converter", "Spinning up a thread for the CostmapToPolygons plugin");
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const std::string&, rclcpp::Node::SharedPtr)’:
+/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32: warning: format ‘%s’ expects argument of type ‘char*’, but argument 5 has type ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} [-Wformat=]
+  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_local_planner/teb_local_planner/include/teb_local_planner/teb_local_planner_ros.h:68:
+/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119: note: format string is defined here
+  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+      |                                                                                                                      ~^
+      |                                                                                                                       |
+      |                                                                                                                       char*

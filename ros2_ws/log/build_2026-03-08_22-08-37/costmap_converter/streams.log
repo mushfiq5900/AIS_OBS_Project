@@ -1,0 +1,199 @@
+[0.022s] Invoking command in '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter': AMENT_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter -- -j8 -l8
+[0.168s] [  5%] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[0.174s] [ 10%] Building CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_lines_convex_hull.cpp.o
+[0.176s] [ 15%] Building CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_polygons.cpp.o
+[0.176s] [ 26%] Built target gtest_main
+[0.177s] [ 31%] Building CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_polygons_concave.cpp.o
+[0.182s] [ 36%] Building CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.cpp.o
+[0.190s] [ 42%] Building CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/background_subtractor.cpp.o
+[0.199s] [ 47%] Building CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_lines_ransac.cpp.o
+[0.216s] [ 52%] Building CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/blob_detector.cpp.o
+[29.153s] In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24,
+[29.155s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27,
+[29.155s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171,
+[29.156s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:46,
+[29.156s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.h:47,
+[29.156s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/src/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.cpp:1:
+[29.156s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::Rate::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)’:
+[29.157s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41: warning: too many arguments for format [-Wformat-extra-args]
+[29.157s]   197 |         RCLCPP_DEBUG(nh_->get_logger(), "costmap_converter", "Spinning up a thread for the CostmapToPolygons plugin");
+[29.157s]       |                                         ^~~~~~~~~~~~~~~~~~~
+[29.212s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const std::string&, rclcpp::Node::SharedPtr)’:
+[29.213s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32: warning: format ‘%s’ expects argument of type ‘char*’, but argument 5 has type ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} [-Wformat=]
+[29.213s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[29.213s]       |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[29.213s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119: note: format string is defined here
+[29.214s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[29.214s]       |                                                                                                                      ~^
+[29.214s]       |                                                                                                                       |
+[29.214s]       |                                                                                                                       char*
+[29.752s] In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24,
+[29.778s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27,
+[29.790s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171,
+[29.791s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:46,
+[29.791s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_to_lines_ransac.h:42,
+[29.820s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/src/costmap_to_lines_ransac.cpp:39:
+[29.820s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::Rate::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)’:
+[29.821s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41: warning: too many arguments for format [-Wformat-extra-args]
+[29.849s]   197 |         RCLCPP_DEBUG(nh_->get_logger(), "costmap_converter", "Spinning up a thread for the CostmapToPolygons plugin");
+[29.850s]       |                                         ^~~~~~~~~~~~~~~~~~~
+[29.892s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const std::string&, rclcpp::Node::SharedPtr)’:
+[29.893s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32: warning: format ‘%s’ expects argument of type ‘char*’, but argument 5 has type ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} [-Wformat=]
+[29.893s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[29.893s]       |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[29.899s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119: note: format string is defined here
+[29.899s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[29.899s]       |                                                                                                                      ~^
+[29.908s]       |                                                                                                                       |
+[29.909s]       |                                                                                                                       char*
+[30.071s] In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24,
+[30.071s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27,
+[30.072s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171,
+[30.072s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_to_polygons.h:42,
+[30.072s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_to_polygons_concave.h:42,
+[30.072s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/src/costmap_to_polygons_concave.cpp:39:
+[30.072s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::Rate::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)’:
+[30.073s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41: warning: too many arguments for format [-Wformat-extra-args]
+[30.073s]   197 |         RCLCPP_DEBUG(nh_->get_logger(), "costmap_converter", "Spinning up a thread for the CostmapToPolygons plugin");
+[30.073s]       |                                         ^~~~~~~~~~~~~~~~~~~
+[30.073s] In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24,
+[30.074s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27,
+[30.074s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171,
+[30.085s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:46,
+[30.086s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_to_lines_convex_hull.h:42,
+[30.086s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/src/costmap_to_lines_convex_hull.cpp:39:
+[30.087s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::Rate::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)’:
+[30.088s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41: warning: too many arguments for format [-Wformat-extra-args]
+[30.088s]   197 |         RCLCPP_DEBUG(nh_->get_logger(), "costmap_converter", "Spinning up a thread for the CostmapToPolygons plugin");
+[30.095s]       |                                         ^~~~~~~~~~~~~~~~~~~
+[30.141s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const std::string&, rclcpp::Node::SharedPtr)’:
+[30.141s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32: warning: format ‘%s’ expects argument of type ‘char*’, but argument 5 has type ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} [-Wformat=]
+[30.141s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[30.142s]       |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[30.142s] In file included from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_to_polygons.h:43:
+[30.142s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119: note: format string is defined here
+[30.142s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[30.143s]       |                                                                                                                      ~^
+[30.143s]       |                                                                                                                       |
+[30.143s]       |                                                                                                                       char*
+[30.154s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const std::string&, rclcpp::Node::SharedPtr)’:
+[30.154s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32: warning: format ‘%s’ expects argument of type ‘char*’, but argument 5 has type ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} [-Wformat=]
+[30.155s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[30.155s]       |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[30.155s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119: note: format string is defined here
+[30.155s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[30.156s]       |                                                                                                                      ~^
+[30.156s]       |                                                                                                                       |
+[30.156s]       |                                                                                                                       char*
+[30.613s] In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24,
+[30.613s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27,
+[30.613s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171,
+[30.614s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_to_polygons.h:42,
+[30.614s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/src/costmap_to_polygons.cpp:39:
+[30.614s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::Rate::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)’:
+[30.614s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41: warning: too many arguments for format [-Wformat-extra-args]
+[30.615s]   197 |         RCLCPP_DEBUG(nh_->get_logger(), "costmap_converter", "Spinning up a thread for the CostmapToPolygons plugin");
+[30.615s]       |                                         ^~~~~~~~~~~~~~~~~~~
+[30.694s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const std::string&, rclcpp::Node::SharedPtr)’:
+[30.694s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32: warning: format ‘%s’ expects argument of type ‘char*’, but argument 5 has type ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} [-Wformat=]
+[30.695s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[30.695s]       |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[30.699s] In file included from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_to_polygons.h:43:
+[30.700s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119: note: format string is defined here
+[30.700s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[30.700s]       |                                                                                                                      ~^
+[30.700s]       |                                                                                                                       |
+[30.701s]       |                                                                                                                       char*
+[51.623s] [ 57%] Linking CXX static library libgtest.a
+[51.725s] [ 57%] Built target gtest
+[80.955s] [ 63%] Building CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/multitarget_tracker/HungarianAlg.cpp.o
+[84.268s] [ 68%] Building CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/multitarget_tracker/Kalman.cpp.o
+[87.033s] [ 73%] Building CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/multitarget_tracker/Ctracker.cpp.o
+[90.020s] [ 78%] Linking CXX shared library libcostmap_converter.so
+[91.169s] [ 78%] Built target costmap_converter
+[91.214s] [ 84%] Building CXX object CMakeFiles/standalone_converter.dir/src/costmap_converter_node.cpp.o
+[96.116s] In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24,
+[96.116s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27,
+[96.116s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171,
+[96.116s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/src/costmap_converter_node.cpp:40:
+[96.116s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::Rate::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)’:
+[96.117s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41: warning: too many arguments for format [-Wformat-extra-args]
+[96.117s]   197 |         RCLCPP_DEBUG(nh_->get_logger(), "costmap_converter", "Spinning up a thread for the CostmapToPolygons plugin");
+[96.117s]       |                                         ^~~~~~~~~~~~~~~~~~~
+[96.117s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const std::string&, rclcpp::Node::SharedPtr)’:
+[96.118s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32: warning: format ‘%s’ expects argument of type ‘char*’, but argument 5 has type ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} [-Wformat=]
+[96.118s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[96.118s]       |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[96.118s] In file included from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/src/costmap_converter_node.cpp:47:
+[96.118s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119: note: format string is defined here
+[96.118s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[96.118s]       |                                                                                                                      ~^
+[96.118s]       |                                                                                                                       |
+[96.118s]       |                                                                                                                       char*
+[110.448s] [ 89%] Linking CXX executable standalone_converter
+[110.942s] [ 89%] Built target standalone_converter
+[111.059s] [ 94%] Building CXX object CMakeFiles/test_costmap_polygons.dir/test/costmap_polygons.cpp.o
+[117.243s] In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24,
+[117.243s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27,
+[117.243s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171,
+[117.243s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_to_polygons.h:42,
+[117.243s]                  from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/test/costmap_polygons.cpp:5:
+[117.243s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::Rate::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)’:
+[117.243s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41: warning: too many arguments for format [-Wformat-extra-args]
+[117.243s]   197 |         RCLCPP_DEBUG(nh_->get_logger(), "costmap_converter", "Spinning up a thread for the CostmapToPolygons plugin");
+[117.244s]       |                                         ^~~~~~~~~~~~~~~~~~~
+[117.261s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function ‘void costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const std::string&, rclcpp::Node::SharedPtr)’:
+[117.261s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32: warning: format ‘%s’ expects argument of type ‘char*’, but argument 5 has type ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} [-Wformat=]
+[117.261s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[117.261s]       |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[117.263s] In file included from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_to_polygons.h:43:
+[117.263s] /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119: note: format string is defined here
+[117.263s]   313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);
+[117.263s]       |                                                                                                                      ~^
+[117.263s]       |                                                                                                                       |
+[117.263s]       |                                                                                                                       char*
+[121.469s] [100%] Linking CXX executable test_costmap_polygons
+[122.943s] [100%] Built target test_costmap_polygons
+[122.996s] Invoked command in '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter' returned '0': AMENT_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter -- -j8 -l8
+[122.998s] Invoking command in '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter': AMENT_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter
+[123.011s] -- Install configuration: "Release"
+[123.012s] -- Execute custom install script
+[123.013s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/lib/libcostmap_converter.so
+[123.028s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/bin/standalone_converter
+[123.043s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_converter_interface.h
+[123.057s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/background_subtractor.h
+[123.074s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/blob_detector.h
+[123.089s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.h
+[123.103s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/Ctracker.h
+[123.117s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/HungarianAlg.h
+[123.132s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/Kalman.h
+[123.146s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/README.md
+[123.159s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/defines.h
+[123.173s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_lines_convex_hull.h
+[123.187s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_lines_ransac.h
+[123.201s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_polygons.h
+[123.215s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_polygons_concave.h
+[123.229s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/misc.h
+[123.243s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/library_path.sh
+[123.257s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/library_path.dsv
+[123.271s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter//costmap_converter_plugins.xml
+[123.285s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/ament_index/resource_index/package_run_dependencies/costmap_converter
+[123.299s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/ament_index/resource_index/parent_prefix_path/costmap_converter
+[123.312s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/ament_prefix_path.sh
+[123.326s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/ament_prefix_path.dsv
+[123.339s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/path.sh
+[123.353s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/path.dsv
+[123.367s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/local_setup.bash
+[123.380s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/local_setup.sh
+[123.395s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/local_setup.zsh
+[123.409s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/local_setup.dsv
+[123.423s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/package.dsv
+[123.438s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/ament_index/resource_index/packages/costmap_converter
+[123.452s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/ament_index/resource_index/costmap_converter__pluginlib__plugin/costmap_converter
+[123.466s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_include_directories-extras.cmake
+[123.482s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_libraries-extras.cmake
+[123.498s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_dependencies-extras.cmake
+[123.514s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/cmake/costmap_converterConfig.cmake
+[123.528s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/cmake/costmap_converterConfig-version.cmake
+[123.542s] -- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/package.xml
+[123.594s] Invoked command in '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter' returned '0': AMENT_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter

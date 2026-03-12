@@ -1,0 +1,1339 @@
+[0.000000] (-) TimerEvent: {}
+[0.001130] (costmap_converter_msgs) JobQueued: {'identifier': 'costmap_converter_msgs', 'dependencies': OrderedDict()}
+[0.001319] (costmap_converter) JobQueued: {'identifier': 'costmap_converter', 'dependencies': OrderedDict({'costmap_converter_msgs': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs'})}
+[0.001533] (teb_msgs) JobQueued: {'identifier': 'teb_msgs', 'dependencies': OrderedDict({'costmap_converter_msgs': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs'})}
+[0.001712] (teb_local_planner) JobQueued: {'identifier': 'teb_local_planner', 'dependencies': OrderedDict({'costmap_converter_msgs': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs', 'costmap_converter': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter', 'teb_msgs': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs'})}
+[0.001968] (costmap_converter_msgs) JobStarted: {'identifier': 'costmap_converter_msgs'}
+[0.031353] (costmap_converter_msgs) JobProgress: {'identifier': 'costmap_converter_msgs', 'progress': 'cmake'}
+[0.038855] (costmap_converter_msgs) JobProgress: {'identifier': 'costmap_converter_msgs', 'progress': 'build'}
+[0.038999] (costmap_converter_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter_msgs'], 'cwd': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mushfiqul', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/mushfiqul/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mushfiqul', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/mushfiqul/AIS_OBS_Project', 'TERM_PROGRAM_VERSION': '1.109.5', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/mushfiqul/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/226/usr/share/code/code', 'MANAGERPID': '4071', 'MAKEFLAGS': '-j2', 'SYSTEMD_EXEC_PID': '4356', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6988', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mushfiqul', 'JOURNAL_STREAM': '9:32656', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'mushfiqul', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models:/opt/ros/jazzy/share/turtlebot3_gazebo/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/mushfiqul/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/mushfiqul/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mushfiqul-VMware-Virtual-Platform:@/tmp/.ICE-unix/4313,unix/mushfiqul-VMware-Virtual-Platform:/tmp/.ICE-unix/4313', 'GTK_EXE_PREFIX': '/snap/code/226/usr', 'INVOCATION_ID': '2318958329b1416b9b88ba43484ab669', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/226/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/mushfiqul/snap/code/226/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ROSIL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8bac5a4c3b.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/mushfiqul/snap/code/226/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter_msgs', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/mushfiqul/snap/code/226/.local/share:/home/mushfiqul/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099896] (-) TimerEvent: {}
+[0.200880] (-) TimerEvent: {}
+[0.303399] (-) TimerEvent: {}
+[0.394072] (costmap_converter_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_symlink_costmap_converter_msgs\n'}
+[0.404266] (-) TimerEvent: {}
+[0.406195] (costmap_converter_msgs) StdoutLine: {'line': b'[  2%] Built target costmap_converter_msgs__rosidl_generator_type_description\n'}
+[0.463732] (costmap_converter_msgs) StdoutLine: {'line': b'[  4%] Built target costmap_converter_msgs__cpp\n'}
+[0.504437] (-) TimerEvent: {}
+[0.559011] (costmap_converter_msgs) StdoutLine: {'line': b'[ 22%] Built target costmap_converter_msgs__rosidl_generator_c\n'}
+[0.604849] (-) TimerEvent: {}
+[0.684635] (costmap_converter_msgs) StdoutLine: {'line': b'[ 31%] Built target costmap_converter_msgs__rosidl_typesupport_cpp\n'}
+[0.705200] (-) TimerEvent: {}
+[0.813906] (-) TimerEvent: {}
+[0.914576] (-) TimerEvent: {}
+[0.930738] (costmap_converter_msgs) StdoutLine: {'line': b'[ 40%] Built target costmap_converter_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.018320] (-) TimerEvent: {}
+[1.093202] (costmap_converter_msgs) StdoutLine: {'line': b'[ 50%] Built target costmap_converter_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.120802] (-) TimerEvent: {}
+[1.231576] (-) TimerEvent: {}
+[1.333045] (-) TimerEvent: {}
+[1.434722] (-) TimerEvent: {}
+[1.497683] (costmap_converter_msgs) StdoutLine: {'line': b'[ 59%] Built target costmap_converter_msgs__rosidl_typesupport_introspection_c\n'}
+[1.537934] (-) TimerEvent: {}
+[1.628623] (costmap_converter_msgs) StdoutLine: {'line': b'[ 68%] Built target costmap_converter_msgs__rosidl_typesupport_c\n'}
+[1.638394] (-) TimerEvent: {}
+[1.687192] (costmap_converter_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.738487] (-) TimerEvent: {}
+[1.768540] (costmap_converter_msgs) StdoutLine: {'line': b'[ 77%] Built target costmap_converter_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.792375] (costmap_converter_msgs) StdoutLine: {'line': b'writing costmap_converter_msgs.egg-info/PKG-INFO\n'}
+[1.793785] (costmap_converter_msgs) StdoutLine: {'line': b'writing dependency_links to costmap_converter_msgs.egg-info/dependency_links.txt\n'}
+[1.798647] (costmap_converter_msgs) StdoutLine: {'line': b'writing top-level names to costmap_converter_msgs.egg-info/top_level.txt\n'}
+[1.839376] (-) TimerEvent: {}
+[1.888341] (costmap_converter_msgs) StdoutLine: {'line': b'[ 77%] Built target costmap_converter_msgs\n'}
+[1.939581] (-) TimerEvent: {}
+[1.979093] (costmap_converter_msgs) StdoutLine: {'line': b'[ 79%] Built target costmap_converter_msgs__py\n'}
+[2.016114] (costmap_converter_msgs) StdoutLine: {'line': b"reading manifest file 'costmap_converter_msgs.egg-info/SOURCES.txt'\n"}
+[2.018841] (costmap_converter_msgs) StdoutLine: {'line': b"writing manifest file 'costmap_converter_msgs.egg-info/SOURCES.txt'\n"}
+[2.040070] (-) TimerEvent: {}
+[2.055001] (costmap_converter_msgs) StdoutLine: {'line': b'[ 86%] Built target costmap_converter_msgs__rosidl_generator_py\n'}
+[2.080287] (costmap_converter_msgs) StdoutLine: {'line': b'[ 86%] Built target ament_cmake_python_build_costmap_converter_msgs_egg\n'}
+[2.137357] (costmap_converter_msgs) StdoutLine: {'line': b'[ 90%] Built target costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[2.140216] (costmap_converter_msgs) StdoutLine: {'line': b'[ 95%] Built target costmap_converter_msgs_s__rosidl_typesupport_introspection_c\n'}
+[2.140450] (-) TimerEvent: {}
+[2.188635] (costmap_converter_msgs) StdoutLine: {'line': b'[100%] Built target costmap_converter_msgs_s__rosidl_typesupport_c\n'}
+[2.212560] (costmap_converter_msgs) CommandEnded: {'returncode': 0}
+[2.215149] (costmap_converter_msgs) JobProgress: {'identifier': 'costmap_converter_msgs', 'progress': 'install'}
+[2.232676] (costmap_converter_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter_msgs'], 'cwd': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mushfiqul', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/mushfiqul/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mushfiqul', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/mushfiqul/AIS_OBS_Project', 'TERM_PROGRAM_VERSION': '1.109.5', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/mushfiqul/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/226/usr/share/code/code', 'MANAGERPID': '4071', 'MAKEFLAGS': '-j2', 'SYSTEMD_EXEC_PID': '4356', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6988', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mushfiqul', 'JOURNAL_STREAM': '9:32656', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'mushfiqul', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models:/opt/ros/jazzy/share/turtlebot3_gazebo/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/mushfiqul/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/mushfiqul/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mushfiqul-VMware-Virtual-Platform:@/tmp/.ICE-unix/4313,unix/mushfiqul-VMware-Virtual-Platform:/tmp/.ICE-unix/4313', 'GTK_EXE_PREFIX': '/snap/code/226/usr', 'INVOCATION_ID': '2318958329b1416b9b88ba43484ab669', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/226/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/mushfiqul/snap/code/226/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ROSIL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8bac5a4c3b.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/mushfiqul/snap/code/226/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter_msgs', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/mushfiqul/snap/code/226/.local/share:/home/mushfiqul/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.241122] (-) TimerEvent: {}
+[2.252221] (costmap_converter_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.254091] (costmap_converter_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.255235] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/ament_index/resource_index/rosidl_interfaces/costmap_converter_msgs\n'}
+[2.255562] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleMsg.json\n'}
+[2.255681] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleArrayMsg.json\n'}
+[2.257551] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__functions.h\n'}
+[2.257849] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__struct.h\n'}
+[2.258137] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.h\n'}
+[2.258266] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__functions.h\n'}
+[2.258545] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__struct.h\n'}
+[2.260582] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.h\n'}
+[2.260719] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_array_msg.h\n'}
+[2.260825] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_msg.h\n'}
+[2.260931] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.261183] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/library_path.sh\n'}
+[2.261407] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/library_path.dsv\n'}
+[2.261523] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[2.261652] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[2.261755] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.261859] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__builder.hpp\n'}
+[2.262064] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__struct.hpp\n'}
+[2.262313] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__traits.hpp\n'}
+[2.265676] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.hpp\n'}
+[2.265965] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__builder.hpp\n'}
+[2.266150] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__struct.hpp\n'}
+[2.266619] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__traits.hpp\n'}
+[2.266821] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.hpp\n'}
+[2.267078] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_array_msg.hpp\n'}
+[2.267267] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_msg.hpp\n'}
+[2.267433] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.267618] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.267814] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.267994] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.268173] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_introspection_c.h\n'}
+[2.268358] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_introspection_c.h\n'}
+[2.268627] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.269350] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.269594] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.269823] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/pythonpath.sh\n'}
+[2.271564] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/pythonpath.dsv\n'}
+[2.274894] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs-0.1.2-py3.12.egg-info/PKG-INFO\n'}
+[2.275092] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs-0.1.2-py3.12.egg-info/SOURCES.txt\n'}
+[2.275274] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs-0.1.2-py3.12.egg-info/dependency_links.txt\n'}
+[2.275609] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs-0.1.2-py3.12.egg-info/top_level.txt\n'}
+[2.275847] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/__init__.py\n'}
+[2.276036] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[2.276206] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.276381] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.276814] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.so\n'}
+[2.277210] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[2.277703] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[2.280623] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/msg/__init__.py\n'}
+[2.282002] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/msg/_obstacle_array_msg.py\n'}
+[2.282299] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/msg/_obstacle_array_msg_s.c\n'}
+[2.282410] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/msg/_obstacle_msg.py\n'}
+[2.282508] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/msg/_obstacle_msg_s.c\n'}
+[2.282606] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[2.282769] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[2.282868] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.so\n'}
+[2.282988] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleMsg.idl\n'}
+[2.283105] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleArrayMsg.idl\n'}
+[2.283258] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleMsg.msg\n'}
+[2.283375] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleArrayMsg.msg\n'}
+[2.283471] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/ament_index/resource_index/package_run_dependencies/costmap_converter_msgs\n'}
+[2.283579] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/ament_index/resource_index/parent_prefix_path/costmap_converter_msgs\n'}
+[2.283675] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/ament_prefix_path.sh\n'}
+[2.284022] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/ament_prefix_path.dsv\n'}
+[2.284138] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/path.sh\n'}
+[2.284317] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/path.dsv\n'}
+[2.284423] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.bash\n'}
+[2.284550] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.sh\n'}
+[2.284765] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.zsh\n'}
+[2.284893] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.dsv\n'}
+[2.284991] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.dsv\n'}
+[2.300881] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/ament_index/resource_index/packages/costmap_converter_msgs\n'}
+[2.301321] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.301939] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.302592] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.303148] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.303770] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.304462] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.305743] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.305913] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgsConfig.cmake\n'}
+[2.306501] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgsConfig-version.cmake\n'}
+[2.308163] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.xml\n'}
+[2.312347] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_c.so\n'}
+[2.312746] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.315153] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.317084] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.318452] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_c.so\n'}
+[2.321322] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.322791] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_cpp.so\n'}
+[2.341353] (-) TimerEvent: {}
+[2.402288] (costmap_converter_msgs) StdoutLine: {'line': b"Listing '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs'...\n"}
+[2.402567] (costmap_converter_msgs) StdoutLine: {'line': b"Listing '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages/costmap_converter_msgs/msg'...\n"}
+[2.414239] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_py.so\n'}
+[2.415611] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cExport.cmake\n'}
+[2.416393] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.418148] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.418930] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.420467] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.422108] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.422366] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.423279] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.424341] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.426056] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.426641] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.427686] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.428241] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.429822] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.430596] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.432260] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_pyExport.cmake\n'}
+[2.432656] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.439147] (costmap_converter_msgs) CommandEnded: {'returncode': 0}
+[2.441700] (-) TimerEvent: {}
+[2.524295] (costmap_converter_msgs) JobEnded: {'identifier': 'costmap_converter_msgs', 'rc': 0}
+[2.529079] (costmap_converter) JobStarted: {'identifier': 'costmap_converter'}
+[2.541866] (-) TimerEvent: {}
+[2.555290] (costmap_converter) JobProgress: {'identifier': 'costmap_converter', 'progress': 'cmake'}
+[2.560168] (costmap_converter) JobProgress: {'identifier': 'costmap_converter', 'progress': 'build'}
+[2.560880] (costmap_converter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter'], 'cwd': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mushfiqul', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/mushfiqul/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mushfiqul', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/mushfiqul/AIS_OBS_Project', 'TERM_PROGRAM_VERSION': '1.109.5', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/mushfiqul/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/226/usr/share/code/code', 'MANAGERPID': '4071', 'MAKEFLAGS': '-j2', 'SYSTEMD_EXEC_PID': '4356', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6988', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mushfiqul', 'JOURNAL_STREAM': '9:32656', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'mushfiqul', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models:/opt/ros/jazzy/share/turtlebot3_gazebo/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/mushfiqul/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/mushfiqul/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mushfiqul-VMware-Virtual-Platform:@/tmp/.ICE-unix/4313,unix/mushfiqul-VMware-Virtual-Platform:/tmp/.ICE-unix/4313', 'GTK_EXE_PREFIX': '/snap/code/226/usr', 'INVOCATION_ID': '2318958329b1416b9b88ba43484ab669', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/226/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/mushfiqul/snap/code/226/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ROSIL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8bac5a4c3b.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/mushfiqul/snap/code/226/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/mushfiqul/snap/code/226/.local/share:/home/mushfiqul/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.642495] (-) TimerEvent: {}
+[2.742989] (-) TimerEvent: {}
+[2.805370] (costmap_converter) StdoutLine: {'line': b'[ 10%] Built target gtest_main\n'}
+[2.843258] (-) TimerEvent: {}
+[2.903450] (costmap_converter) StdoutLine: {'line': b'[ 21%] Built target gtest\n'}
+[2.943738] (-) TimerEvent: {}
+[3.044291] (-) TimerEvent: {}
+[3.113290] (costmap_converter) StdoutLine: {'line': b'[ 78%] Built target costmap_converter\n'}
+[3.144621] (-) TimerEvent: {}
+[3.223427] (costmap_converter) StdoutLine: {'line': b'[ 89%] Built target standalone_converter\n'}
+[3.231189] (costmap_converter) StdoutLine: {'line': b'[100%] Built target test_costmap_polygons\n'}
+[3.244855] (-) TimerEvent: {}
+[3.259552] (costmap_converter) CommandEnded: {'returncode': 0}
+[3.336905] (costmap_converter) JobProgress: {'identifier': 'costmap_converter', 'progress': 'install'}
+[3.337879] (costmap_converter) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter'], 'cwd': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mushfiqul', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/mushfiqul/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mushfiqul', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/mushfiqul/AIS_OBS_Project', 'TERM_PROGRAM_VERSION': '1.109.5', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/mushfiqul/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/226/usr/share/code/code', 'MANAGERPID': '4071', 'MAKEFLAGS': '-j2', 'SYSTEMD_EXEC_PID': '4356', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6988', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mushfiqul', 'JOURNAL_STREAM': '9:32656', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'mushfiqul', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models:/opt/ros/jazzy/share/turtlebot3_gazebo/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/mushfiqul/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/mushfiqul/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mushfiqul-VMware-Virtual-Platform:@/tmp/.ICE-unix/4313,unix/mushfiqul-VMware-Virtual-Platform:/tmp/.ICE-unix/4313', 'GTK_EXE_PREFIX': '/snap/code/226/usr', 'INVOCATION_ID': '2318958329b1416b9b88ba43484ab669', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/226/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/mushfiqul/snap/code/226/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ROSIL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8bac5a4c3b.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/mushfiqul/snap/code/226/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/mushfiqul/snap/code/226/.local/share:/home/mushfiqul/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.345070] (-) TimerEvent: {}
+[3.357555] (costmap_converter) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[3.360019] (costmap_converter) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.360527] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/lib/libcostmap_converter.so\n'}
+[3.361859] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/bin/standalone_converter\n'}
+[3.362795] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_converter_interface.h\n'}
+[3.363200] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/background_subtractor.h\n'}
+[3.364281] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/blob_detector.h\n'}
+[3.364690] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.h\n'}
+[3.365771] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/Ctracker.h\n'}
+[3.366218] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/HungarianAlg.h\n'}
+[3.366574] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/Kalman.h\n'}
+[3.367081] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/README.md\n'}
+[3.367273] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/defines.h\n'}
+[3.367607] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_lines_convex_hull.h\n'}
+[3.368052] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_lines_ransac.h\n'}
+[3.368407] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_polygons.h\n'}
+[3.368795] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/costmap_to_polygons_concave.h\n'}
+[3.369305] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include//costmap_converter/misc.h\n'}
+[3.369668] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/library_path.sh\n'}
+[3.370464] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/library_path.dsv\n'}
+[3.370925] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter//costmap_converter_plugins.xml\n'}
+[3.371293] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/ament_index/resource_index/package_run_dependencies/costmap_converter\n'}
+[3.371639] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/ament_index/resource_index/parent_prefix_path/costmap_converter\n'}
+[3.372162] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/ament_prefix_path.sh\n'}
+[3.372507] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/ament_prefix_path.dsv\n'}
+[3.372882] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/path.sh\n'}
+[3.373198] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/environment/path.dsv\n'}
+[3.373796] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/local_setup.bash\n'}
+[3.375023] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/local_setup.sh\n'}
+[3.375181] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/local_setup.zsh\n'}
+[3.375295] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/local_setup.dsv\n'}
+[3.375400] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/package.dsv\n'}
+[3.397295] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/ament_index/resource_index/packages/costmap_converter\n'}
+[3.397696] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/ament_index/resource_index/costmap_converter__pluginlib__plugin/costmap_converter\n'}
+[3.398377] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.398789] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.398935] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.399487] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/cmake/costmap_converterConfig.cmake\n'}
+[3.399786] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/cmake/costmap_converterConfig-version.cmake\n'}
+[3.400236] (costmap_converter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/share/costmap_converter/package.xml\n'}
+[3.403848] (costmap_converter) CommandEnded: {'returncode': 0}
+[3.446283] (-) TimerEvent: {}
+[3.459880] (costmap_converter) JobEnded: {'identifier': 'costmap_converter', 'rc': 0}
+[3.464577] (teb_msgs) JobStarted: {'identifier': 'teb_msgs'}
+[3.482099] (teb_msgs) JobProgress: {'identifier': 'teb_msgs', 'progress': 'cmake'}
+[3.485449] (teb_msgs) JobProgress: {'identifier': 'teb_msgs', 'progress': 'build'}
+[3.485933] (teb_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_msgs'], 'cwd': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mushfiqul', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/mushfiqul/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mushfiqul', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/mushfiqul/AIS_OBS_Project', 'TERM_PROGRAM_VERSION': '1.109.5', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/mushfiqul/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/226/usr/share/code/code', 'MANAGERPID': '4071', 'MAKEFLAGS': '-j2', 'SYSTEMD_EXEC_PID': '4356', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6988', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mushfiqul', 'JOURNAL_STREAM': '9:32656', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'mushfiqul', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models:/opt/ros/jazzy/share/turtlebot3_gazebo/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/mushfiqul/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/mushfiqul/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mushfiqul-VMware-Virtual-Platform:@/tmp/.ICE-unix/4313,unix/mushfiqul-VMware-Virtual-Platform:/tmp/.ICE-unix/4313', 'GTK_EXE_PREFIX': '/snap/code/226/usr', 'INVOCATION_ID': '2318958329b1416b9b88ba43484ab669', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/226/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/mushfiqul/snap/code/226/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ROSIL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8bac5a4c3b.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/mushfiqul/snap/code/226/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_msgs', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/mushfiqul/snap/code/226/.local/share:/home/mushfiqul/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.547903] (-) TimerEvent: {}
+[3.624266] (teb_msgs) StdoutLine: {'line': b'[  1%] Built target teb_msgs__rosidl_generator_type_description\n'}
+[3.648474] (-) TimerEvent: {}
+[3.649288] (teb_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_teb_msgs\n'}
+[3.687735] (teb_msgs) StdoutLine: {'line': b'[  3%] Built target teb_msgs__cpp\n'}
+[3.739131] (teb_msgs) StdoutLine: {'line': b'[ 24%] Built target teb_msgs__rosidl_generator_c\n'}
+[3.748857] (-) TimerEvent: {}
+[3.824080] (teb_msgs) StdoutLine: {'line': b'[ 33%] Built target teb_msgs__rosidl_typesupport_cpp\n'}
+[3.849901] (-) TimerEvent: {}
+[3.951201] (-) TimerEvent: {}
+[3.980020] (teb_msgs) StdoutLine: {'line': b'[ 42%] Built target teb_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.051540] (-) TimerEvent: {}
+[4.089924] (teb_msgs) StdoutLine: {'line': b'[ 51%] Built target teb_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.152197] (-) TimerEvent: {}
+[4.247798] (teb_msgs) StdoutLine: {'line': b'[ 61%] Built target teb_msgs__rosidl_typesupport_introspection_c\n'}
+[4.252468] (-) TimerEvent: {}
+[4.342271] (teb_msgs) StdoutLine: {'line': b'[ 70%] Built target teb_msgs__rosidl_typesupport_c\n'}
+[4.352865] (-) TimerEvent: {}
+[4.432144] (teb_msgs) StdoutLine: {'line': b'[ 79%] Built target teb_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.453021] (-) TimerEvent: {}
+[4.499033] (teb_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.499445] (teb_msgs) StdoutLine: {'line': b'[ 79%] Built target teb_msgs\n'}
+[4.549129] (teb_msgs) StdoutLine: {'line': b'writing teb_msgs.egg-info/PKG-INFO\n'}
+[4.550273] (teb_msgs) StdoutLine: {'line': b'writing dependency_links to teb_msgs.egg-info/dependency_links.txt\n'}
+[4.551277] (teb_msgs) StdoutLine: {'line': b'writing top-level names to teb_msgs.egg-info/top_level.txt\n'}
+[4.553345] (-) TimerEvent: {}
+[4.572651] (teb_msgs) StdoutLine: {'line': b'[ 81%] Built target teb_msgs__py\n'}
+[4.638854] (teb_msgs) StdoutLine: {'line': b'[ 88%] Built target teb_msgs__rosidl_generator_py\n'}
+[4.653568] (-) TimerEvent: {}
+[4.674328] (teb_msgs) StdoutLine: {'line': b"reading manifest file 'teb_msgs.egg-info/SOURCES.txt'\n"}
+[4.676146] (teb_msgs) StdoutLine: {'line': b"writing manifest file 'teb_msgs.egg-info/SOURCES.txt'\n"}
+[4.694526] (teb_msgs) StdoutLine: {'line': b'[ 92%] Built target teb_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[4.737447] (teb_msgs) StdoutLine: {'line': b'[ 92%] Built target ament_cmake_python_build_teb_msgs_egg\n'}
+[4.753947] (-) TimerEvent: {}
+[4.755003] (teb_msgs) StdoutLine: {'line': b'[ 96%] Built target teb_msgs_s__rosidl_typesupport_introspection_c\n'}
+[4.794588] (teb_msgs) StdoutLine: {'line': b'[100%] Built target teb_msgs_s__rosidl_typesupport_c\n'}
+[4.816672] (teb_msgs) CommandEnded: {'returncode': 0}
+[4.820440] (teb_msgs) JobProgress: {'identifier': 'teb_msgs', 'progress': 'install'}
+[4.821433] (teb_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_msgs'], 'cwd': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mushfiqul', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/mushfiqul/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mushfiqul', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/mushfiqul/AIS_OBS_Project', 'TERM_PROGRAM_VERSION': '1.109.5', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/mushfiqul/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/226/usr/share/code/code', 'MANAGERPID': '4071', 'MAKEFLAGS': '-j2', 'SYSTEMD_EXEC_PID': '4356', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6988', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mushfiqul', 'JOURNAL_STREAM': '9:32656', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'mushfiqul', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models:/opt/ros/jazzy/share/turtlebot3_gazebo/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/mushfiqul/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/mushfiqul/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mushfiqul-VMware-Virtual-Platform:@/tmp/.ICE-unix/4313,unix/mushfiqul-VMware-Virtual-Platform:/tmp/.ICE-unix/4313', 'GTK_EXE_PREFIX': '/snap/code/226/usr', 'INVOCATION_ID': '2318958329b1416b9b88ba43484ab669', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/226/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/mushfiqul/snap/code/226/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ROSIL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8bac5a4c3b.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/mushfiqul/snap/code/226/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_msgs', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/mushfiqul/snap/code/226/.local/share:/home/mushfiqul/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[4.837888] (teb_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.839685] (teb_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.840513] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/ament_index/resource_index/rosidl_interfaces/teb_msgs\n'}
+[4.840841] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/msg/FeedbackMsg.json\n'}
+[4.841195] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/msg/TrajectoryMsg.json\n'}
+[4.841325] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/msg/TrajectoryPointMsg.json\n'}
+[4.842020] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__functions.h\n'}
+[4.842355] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__struct.h\n'}
+[4.843260] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__type_support.h\n'}
+[4.843530] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__functions.h\n'}
+[4.843793] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__struct.h\n'}
+[4.844021] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__type_support.h\n'}
+[4.844255] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__functions.h\n'}
+[4.844493] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__struct.h\n'}
+[4.844730] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__type_support.h\n'}
+[4.844928] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/feedback_msg.h\n'}
+[4.845052] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.845316] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/trajectory_msg.h\n'}
+[4.845422] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/trajectory_point_msg.h\n'}
+[4.845522] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/environment/library_path.sh\n'}
+[4.845656] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/environment/library_path.dsv\n'}
+[4.846224] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[4.846634] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[4.847152] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[4.847411] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.848161] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__builder.hpp\n'}
+[4.848411] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__struct.hpp\n'}
+[4.848641] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__traits.hpp\n'}
+[4.848901] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__type_support.hpp\n'}
+[4.849121] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__builder.hpp\n'}
+[4.849366] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__struct.hpp\n'}
+[4.849617] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__traits.hpp\n'}
+[4.849888] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__type_support.hpp\n'}
+[4.850111] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__builder.hpp\n'}
+[4.850330] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__struct.hpp\n'}
+[4.850528] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__traits.hpp\n'}
+[4.850738] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__type_support.hpp\n'}
+[4.850992] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/feedback_msg.hpp\n'}
+[4.851416] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.851674] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/trajectory_msg.hpp\n'}
+[4.851920] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/trajectory_point_msg.hpp\n'}
+[4.852854] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.853108] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.853332] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.853581] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.854084] (-) TimerEvent: {}
+[4.854304] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__rosidl_typesupport_introspection_c.h\n'}
+[4.854658] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__rosidl_typesupport_introspection_c.h\n'}
+[4.855034] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__rosidl_typesupport_introspection_c.h\n'}
+[4.855247] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.855656] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.855957] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.856206] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.856485] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/environment/pythonpath.sh\n'}
+[4.856847] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/environment/pythonpath.dsv\n'}
+[4.857499] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs-0.0.1-py3.12.egg-info/PKG-INFO\n'}
+[4.857724] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs-0.0.1-py3.12.egg-info/SOURCES.txt\n'}
+[4.858044] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs-0.0.1-py3.12.egg-info/dependency_links.txt\n'}
+[4.858287] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs-0.0.1-py3.12.egg-info/top_level.txt\n'}
+[4.859871] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/__init__.py\n'}
+[4.860326] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/_teb_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[4.860705] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/_teb_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.861045] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/_teb_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.861465] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/msg/__init__.py\n'}
+[4.861794] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/msg/_feedback_msg.py\n'}
+[4.862239] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/msg/_feedback_msg_s.c\n'}
+[4.862355] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/msg/_trajectory_msg.py\n'}
+[4.862457] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/msg/_trajectory_msg_s.c\n'}
+[4.862880] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/msg/_trajectory_point_msg.py\n'}
+[4.863231] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/msg/_trajectory_point_msg_s.c\n'}
+[4.863349] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_c.so\n'}
+[4.863493] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[4.863657] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[4.864413] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[4.865726] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[4.867172] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_c.so\n'}
+[4.867673] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/msg/FeedbackMsg.idl\n'}
+[4.868245] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/msg/TrajectoryMsg.idl\n'}
+[4.868732] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/msg/TrajectoryPointMsg.idl\n'}
+[4.869225] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/msg/FeedbackMsg.msg\n'}
+[4.869697] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/msg/TrajectoryMsg.msg\n'}
+[4.870241] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/msg/TrajectoryPointMsg.msg\n'}
+[4.870795] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/ament_index/resource_index/package_run_dependencies/teb_msgs\n'}
+[4.871426] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/ament_index/resource_index/parent_prefix_path/teb_msgs\n'}
+[4.871983] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/environment/ament_prefix_path.sh\n'}
+[4.872587] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/environment/ament_prefix_path.dsv\n'}
+[4.873089] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/environment/path.sh\n'}
+[4.873619] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/environment/path.dsv\n'}
+[4.874024] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/local_setup.bash\n'}
+[4.875101] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/local_setup.sh\n'}
+[4.875309] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/local_setup.zsh\n'}
+[4.875507] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/local_setup.dsv\n'}
+[4.875691] (teb_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/package.dsv\n'}
+[4.896285] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/ament_index/resource_index/packages/teb_msgs\n'}
+[4.896628] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.896907] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.897238] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.897508] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.897793] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.898440] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.898869] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.899382] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/teb_msgsConfig.cmake\n'}
+[4.899835] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/teb_msgsConfig-version.cmake\n'}
+[4.900350] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/package.xml\n'}
+[4.901864] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/libteb_msgs__rosidl_generator_c.so\n'}
+[4.904372] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.906814] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.908167] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.909580] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_c.so\n'}
+[4.911656] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.913321] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_cpp.so\n'}
+[4.954409] (-) TimerEvent: {}
+[4.987826] (teb_msgs) StdoutLine: {'line': b"Listing '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs'...\n"}
+[4.988309] (teb_msgs) StdoutLine: {'line': b"Listing '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages/teb_msgs/msg'...\n"}
+[5.000402] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/libteb_msgs__rosidl_generator_py.so\n'}
+[5.002882] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_generator_cExport.cmake\n'}
+[5.004665] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.007042] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.007371] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.010043] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.011415] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.011613] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.012666] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.013256] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.014157] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.014500] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.015922] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.016287] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.018091] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.018669] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.019577] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.020150] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.022781] (teb_msgs) CommandEnded: {'returncode': 0}
+[5.054631] (-) TimerEvent: {}
+[5.064888] (teb_msgs) JobEnded: {'identifier': 'teb_msgs', 'rc': 0}
+[5.067406] (teb_local_planner) JobStarted: {'identifier': 'teb_local_planner'}
+[5.096159] (teb_local_planner) JobProgress: {'identifier': 'teb_local_planner', 'progress': 'cmake'}
+[5.099122] (teb_local_planner) JobProgress: {'identifier': 'teb_local_planner', 'progress': 'build'}
+[5.100588] (teb_local_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_local_planner'], 'cwd': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_local_planner', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mushfiqul', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/mushfiqul/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/lib:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mushfiqul', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/mushfiqul/AIS_OBS_Project', 'TERM_PROGRAM_VERSION': '1.109.5', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/mushfiqul/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/226/usr/share/code/code', 'MANAGERPID': '4071', 'MAKEFLAGS': '-j2', 'SYSTEMD_EXEC_PID': '4356', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6988', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mushfiqul', 'JOURNAL_STREAM': '9:32656', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'mushfiqul', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models:/opt/ros/jazzy/share/turtlebot3_gazebo/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/bin:/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/mushfiqul/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/mushfiqul/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mushfiqul-VMware-Virtual-Platform:@/tmp/.ICE-unix/4313,unix/mushfiqul-VMware-Virtual-Platform:/tmp/.ICE-unix/4313', 'GTK_EXE_PREFIX': '/snap/code/226/usr', 'INVOCATION_ID': '2318958329b1416b9b88ba43484ab669', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/226/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/mushfiqul/snap/code/226/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ROSIL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8bac5a4c3b.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/mushfiqul/snap/code/226/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_local_planner', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/mushfiqul/snap/code/226/.local/share:/home/mushfiqul/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.154912] (-) TimerEvent: {}
+[5.255582] (-) TimerEvent: {}
+[5.306479] (teb_local_planner) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/teb_local_planner.dir/src/optimal_planner.cpp.o\n'}
+[5.307983] (teb_local_planner) StdoutLine: {'line': b'[ 20%] Building CXX object CMakeFiles/teb_local_planner.dir/src/visualization.cpp.o\n'}
+[5.356275] (-) TimerEvent: {}
+[5.456823] (-) TimerEvent: {}
+[5.557078] (-) TimerEvent: {}
+[5.657805] (-) TimerEvent: {}
+[5.758163] (-) TimerEvent: {}
+[5.858850] (-) TimerEvent: {}
+[5.959583] (-) TimerEvent: {}
+[6.059905] (-) TimerEvent: {}
+[6.160128] (-) TimerEvent: {}
+[6.260859] (-) TimerEvent: {}
+[6.361185] (-) TimerEvent: {}
+[6.464391] (-) TimerEvent: {}
+[6.564776] (-) TimerEvent: {}
+[6.665545] (-) TimerEvent: {}
+[6.765924] (-) TimerEvent: {}
+[6.866674] (-) TimerEvent: {}
+[6.967556] (-) TimerEvent: {}
+[7.068591] (-) TimerEvent: {}
+[7.168963] (-) TimerEvent: {}
+[7.269689] (-) TimerEvent: {}
+[7.370093] (-) TimerEvent: {}
+[7.470953] (-) TimerEvent: {}
+[7.571706] (-) TimerEvent: {}
+[7.672425] (-) TimerEvent: {}
+[7.772670] (-) TimerEvent: {}
+[7.872953] (-) TimerEvent: {}
+[7.973662] (-) TimerEvent: {}
+[8.073900] (-) TimerEvent: {}
+[8.174634] (-) TimerEvent: {}
+[8.275335] (-) TimerEvent: {}
+[8.376061] (-) TimerEvent: {}
+[8.476619] (-) TimerEvent: {}
+[8.577195] (-) TimerEvent: {}
+[8.678009] (-) TimerEvent: {}
+[8.778787] (-) TimerEvent: {}
+[8.879397] (-) TimerEvent: {}
+[8.980225] (-) TimerEvent: {}
+[9.082460] (-) TimerEvent: {}
+[9.183670] (-) TimerEvent: {}
+[9.284502] (-) TimerEvent: {}
+[9.395677] (-) TimerEvent: {}
+[9.496277] (-) TimerEvent: {}
+[9.597007] (-) TimerEvent: {}
+[9.698119] (-) TimerEvent: {}
+[9.799608] (-) TimerEvent: {}
+[9.900311] (-) TimerEvent: {}
+[10.001063] (-) TimerEvent: {}
+[10.101439] (-) TimerEvent: {}
+[10.202172] (-) TimerEvent: {}
+[10.339611] (-) TimerEvent: {}
+[10.441262] (-) TimerEvent: {}
+[10.541997] (-) TimerEvent: {}
+[10.642754] (-) TimerEvent: {}
+[10.743529] (-) TimerEvent: {}
+[10.844642] (-) TimerEvent: {}
+[10.945568] (-) TimerEvent: {}
+[11.046316] (-) TimerEvent: {}
+[11.147131] (-) TimerEvent: {}
+[11.247854] (-) TimerEvent: {}
+[11.348583] (-) TimerEvent: {}
+[11.448891] (-) TimerEvent: {}
+[11.549323] (-) TimerEvent: {}
+[11.649927] (-) TimerEvent: {}
+[11.750280] (-) TimerEvent: {}
+[11.850966] (-) TimerEvent: {}
+[11.951652] (-) TimerEvent: {}
+[12.052361] (-) TimerEvent: {}
+[12.152638] (-) TimerEvent: {}
+[12.253036] (-) TimerEvent: {}
+[12.353624] (-) TimerEvent: {}
+[12.454415] (-) TimerEvent: {}
+[12.555500] (-) TimerEvent: {}
+[12.655838] (-) TimerEvent: {}
+[12.756364] (-) TimerEvent: {}
+[12.858906] (-) TimerEvent: {}
+[12.959284] (-) TimerEvent: {}
+[13.059916] (-) TimerEvent: {}
+[13.160600] (-) TimerEvent: {}
+[13.261494] (-) TimerEvent: {}
+[13.362087] (-) TimerEvent: {}
+[13.462693] (-) TimerEvent: {}
+[13.563375] (-) TimerEvent: {}
+[13.664074] (-) TimerEvent: {}
+[13.764362] (-) TimerEvent: {}
+[13.865035] (-) TimerEvent: {}
+[13.965780] (-) TimerEvent: {}
+[14.066429] (-) TimerEvent: {}
+[14.167140] (-) TimerEvent: {}
+[14.267902] (-) TimerEvent: {}
+[14.368517] (-) TimerEvent: {}
+[14.469242] (-) TimerEvent: {}
+[14.569549] (-) TimerEvent: {}
+[14.670182] (-) TimerEvent: {}
+[14.771090] (-) TimerEvent: {}
+[14.871793] (-) TimerEvent: {}
+[14.973062] (-) TimerEvent: {}
+[15.073999] (-) TimerEvent: {}
+[15.174757] (-) TimerEvent: {}
+[15.282706] (-) TimerEvent: {}
+[15.384042] (-) TimerEvent: {}
+[15.484724] (-) TimerEvent: {}
+[15.585422] (-) TimerEvent: {}
+[15.686028] (-) TimerEvent: {}
+[15.786395] (-) TimerEvent: {}
+[15.886675] (-) TimerEvent: {}
+[15.987383] (-) TimerEvent: {}
+[16.089469] (-) TimerEvent: {}
+[16.189881] (-) TimerEvent: {}
+[16.290876] (-) TimerEvent: {}
+[16.391710] (-) TimerEvent: {}
+[16.492433] (-) TimerEvent: {}
+[16.593144] (-) TimerEvent: {}
+[16.693817] (-) TimerEvent: {}
+[16.794728] (-) TimerEvent: {}
+[16.895646] (-) TimerEvent: {}
+[16.995946] (-) TimerEvent: {}
+[17.096578] (-) TimerEvent: {}
+[17.197234] (-) TimerEvent: {}
+[17.297669] (-) TimerEvent: {}
+[17.398355] (-) TimerEvent: {}
+[17.499485] (-) TimerEvent: {}
+[17.599762] (-) TimerEvent: {}
+[17.700782] (-) TimerEvent: {}
+[17.801603] (-) TimerEvent: {}
+[17.902288] (-) TimerEvent: {}
+[18.003018] (-) TimerEvent: {}
+[18.103699] (-) TimerEvent: {}
+[18.209100] (-) TimerEvent: {}
+[18.310115] (-) TimerEvent: {}
+[18.413365] (-) TimerEvent: {}
+[18.514836] (-) TimerEvent: {}
+[18.616150] (-) TimerEvent: {}
+[18.716950] (-) TimerEvent: {}
+[18.817543] (-) TimerEvent: {}
+[18.918737] (-) TimerEvent: {}
+[19.019470] (-) TimerEvent: {}
+[19.120744] (-) TimerEvent: {}
+[19.221278] (-) TimerEvent: {}
+[19.321992] (-) TimerEvent: {}
+[19.422718] (-) TimerEvent: {}
+[19.523375] (-) TimerEvent: {}
+[19.637599] (-) TimerEvent: {}
+[19.742346] (-) TimerEvent: {}
+[19.853466] (-) TimerEvent: {}
+[19.954272] (-) TimerEvent: {}
+[20.055168] (-) TimerEvent: {}
+[20.155902] (-) TimerEvent: {}
+[20.256750] (-) TimerEvent: {}
+[20.358172] (-) TimerEvent: {}
+[20.458614] (-) TimerEvent: {}
+[20.559237] (-) TimerEvent: {}
+[20.659978] (-) TimerEvent: {}
+[20.760806] (-) TimerEvent: {}
+[20.861603] (-) TimerEvent: {}
+[20.962232] (-) TimerEvent: {}
+[21.062853] (-) TimerEvent: {}
+[21.163827] (-) TimerEvent: {}
+[21.265559] (-) TimerEvent: {}
+[21.366153] (-) TimerEvent: {}
+[21.466870] (-) TimerEvent: {}
+[21.568812] (-) TimerEvent: {}
+[21.673193] (-) TimerEvent: {}
+[21.775398] (-) TimerEvent: {}
+[21.875956] (-) TimerEvent: {}
+[21.977240] (-) TimerEvent: {}
+[22.078332] (-) TimerEvent: {}
+[22.179068] (-) TimerEvent: {}
+[22.279670] (-) TimerEvent: {}
+[22.380367] (-) TimerEvent: {}
+[22.481807] (-) TimerEvent: {}
+[22.582272] (-) TimerEvent: {}
+[22.683134] (-) TimerEvent: {}
+[22.784979] (-) TimerEvent: {}
+[22.885837] (-) TimerEvent: {}
+[22.986534] (-) TimerEvent: {}
+[23.087203] (-) TimerEvent: {}
+[23.187893] (-) TimerEvent: {}
+[23.288656] (-) TimerEvent: {}
+[23.389550] (-) TimerEvent: {}
+[23.490458] (-) TimerEvent: {}
+[23.591146] (-) TimerEvent: {}
+[23.691863] (-) TimerEvent: {}
+[23.797757] (-) TimerEvent: {}
+[23.898246] (-) TimerEvent: {}
+[23.999417] (-) TimerEvent: {}
+[24.100861] (-) TimerEvent: {}
+[24.206715] (-) TimerEvent: {}
+[24.308156] (-) TimerEvent: {}
+[24.409043] (-) TimerEvent: {}
+[24.509747] (-) TimerEvent: {}
+[24.610452] (-) TimerEvent: {}
+[24.711565] (-) TimerEvent: {}
+[24.812143] (-) TimerEvent: {}
+[24.912760] (-) TimerEvent: {}
+[25.013219] (-) TimerEvent: {}
+[25.114168] (-) TimerEvent: {}
+[25.234908] (-) TimerEvent: {}
+[25.335394] (-) TimerEvent: {}
+[25.436129] (-) TimerEvent: {}
+[25.536842] (-) TimerEvent: {}
+[25.637476] (-) TimerEvent: {}
+[25.738144] (-) TimerEvent: {}
+[25.838832] (-) TimerEvent: {}
+[25.939517] (-) TimerEvent: {}
+[26.040228] (-) TimerEvent: {}
+[26.140965] (-) TimerEvent: {}
+[26.241605] (-) TimerEvent: {}
+[26.342267] (-) TimerEvent: {}
+[26.442952] (-) TimerEvent: {}
+[26.543752] (-) TimerEvent: {}
+[26.644396] (-) TimerEvent: {}
+[26.745053] (-) TimerEvent: {}
+[26.845709] (-) TimerEvent: {}
+[26.946391] (-) TimerEvent: {}
+[27.047136] (-) TimerEvent: {}
+[27.147785] (-) TimerEvent: {}
+[27.248463] (-) TimerEvent: {}
+[27.348684] (-) TimerEvent: {}
+[27.449447] (-) TimerEvent: {}
+[27.550091] (-) TimerEvent: {}
+[27.650799] (-) TimerEvent: {}
+[27.751533] (-) TimerEvent: {}
+[27.852205] (-) TimerEvent: {}
+[27.964162] (-) TimerEvent: {}
+[28.072727] (-) TimerEvent: {}
+[28.178575] (-) TimerEvent: {}
+[28.282298] (-) TimerEvent: {}
+[28.382939] (-) TimerEvent: {}
+[28.483654] (-) TimerEvent: {}
+[28.584314] (-) TimerEvent: {}
+[28.684967] (-) TimerEvent: {}
+[28.785698] (-) TimerEvent: {}
+[28.886371] (-) TimerEvent: {}
+[28.987079] (-) TimerEvent: {}
+[29.087754] (-) TimerEvent: {}
+[29.188503] (-) TimerEvent: {}
+[29.289139] (-) TimerEvent: {}
+[29.389355] (-) TimerEvent: {}
+[29.490107] (-) TimerEvent: {}
+[29.590775] (-) TimerEvent: {}
+[29.691436] (-) TimerEvent: {}
+[29.792269] (-) TimerEvent: {}
+[29.892907] (-) TimerEvent: {}
+[29.993576] (-) TimerEvent: {}
+[30.094258] (-) TimerEvent: {}
+[30.194986] (-) TimerEvent: {}
+[30.295680] (-) TimerEvent: {}
+[30.396350] (-) TimerEvent: {}
+[30.497088] (-) TimerEvent: {}
+[30.597710] (-) TimerEvent: {}
+[30.698424] (-) TimerEvent: {}
+[30.799096] (-) TimerEvent: {}
+[30.899859] (-) TimerEvent: {}
+[31.000593] (-) TimerEvent: {}
+[31.101284] (-) TimerEvent: {}
+[31.201934] (-) TimerEvent: {}
+[31.302664] (-) TimerEvent: {}
+[31.403332] (-) TimerEvent: {}
+[31.504125] (-) TimerEvent: {}
+[31.604698] (-) TimerEvent: {}
+[31.705381] (-) TimerEvent: {}
+[31.806114] (-) TimerEvent: {}
+[31.906878] (-) TimerEvent: {}
+[32.007445] (-) TimerEvent: {}
+[32.108138] (-) TimerEvent: {}
+[32.208817] (-) TimerEvent: {}
+[32.309524] (-) TimerEvent: {}
+[32.409868] (-) TimerEvent: {}
+[32.510684] (-) TimerEvent: {}
+[32.611025] (-) TimerEvent: {}
+[32.711687] (-) TimerEvent: {}
+[32.812461] (-) TimerEvent: {}
+[32.913242] (-) TimerEvent: {}
+[33.013853] (-) TimerEvent: {}
+[33.114625] (-) TimerEvent: {}
+[33.215228] (-) TimerEvent: {}
+[33.315950] (-) TimerEvent: {}
+[33.416620] (-) TimerEvent: {}
+[33.516899] (-) TimerEvent: {}
+[33.617512] (-) TimerEvent: {}
+[33.718201] (-) TimerEvent: {}
+[33.818871] (-) TimerEvent: {}
+[33.919583] (-) TimerEvent: {}
+[34.021944] (-) TimerEvent: {}
+[34.122564] (-) TimerEvent: {}
+[34.223785] (-) TimerEvent: {}
+[34.324672] (-) TimerEvent: {}
+[34.426356] (-) TimerEvent: {}
+[34.527458] (-) TimerEvent: {}
+[34.628125] (-) TimerEvent: {}
+[34.728891] (-) TimerEvent: {}
+[34.829784] (-) TimerEvent: {}
+[34.930479] (-) TimerEvent: {}
+[35.031048] (-) TimerEvent: {}
+[35.131817] (-) TimerEvent: {}
+[35.232467] (-) TimerEvent: {}
+[35.333151] (-) TimerEvent: {}
+[35.433909] (-) TimerEvent: {}
+[35.534594] (-) TimerEvent: {}
+[35.635266] (-) TimerEvent: {}
+[35.735996] (-) TimerEvent: {}
+[35.836740] (-) TimerEvent: {}
+[35.937486] (-) TimerEvent: {}
+[36.038107] (-) TimerEvent: {}
+[36.138925] (-) TimerEvent: {}
+[36.239561] (-) TimerEvent: {}
+[36.340684] (-) TimerEvent: {}
+[36.462594] (-) TimerEvent: {}
+[36.565665] (-) TimerEvent: {}
+[36.668325] (-) TimerEvent: {}
+[36.768779] (-) TimerEvent: {}
+[36.869465] (-) TimerEvent: {}
+[36.969723] (-) TimerEvent: {}
+[37.070425] (-) TimerEvent: {}
+[37.171181] (-) TimerEvent: {}
+[37.271839] (-) TimerEvent: {}
+[37.372489] (-) TimerEvent: {}
+[37.473327] (-) TimerEvent: {}
+[37.574139] (-) TimerEvent: {}
+[37.674785] (-) TimerEvent: {}
+[37.775467] (-) TimerEvent: {}
+[37.876171] (-) TimerEvent: {}
+[37.976843] (-) TimerEvent: {}
+[38.077632] (-) TimerEvent: {}
+[38.178386] (-) TimerEvent: {}
+[38.279059] (-) TimerEvent: {}
+[38.379687] (-) TimerEvent: {}
+[38.480421] (-) TimerEvent: {}
+[38.581065] (-) TimerEvent: {}
+[38.682485] (-) TimerEvent: {}
+[38.783756] (-) TimerEvent: {}
+[38.884168] (-) TimerEvent: {}
+[38.984823] (-) TimerEvent: {}
+[39.085515] (-) TimerEvent: {}
+[39.186212] (-) TimerEvent: {}
+[39.287022] (-) TimerEvent: {}
+[39.387730] (-) TimerEvent: {}
+[39.488009] (-) TimerEvent: {}
+[39.588358] (-) TimerEvent: {}
+[39.689023] (-) TimerEvent: {}
+[39.789758] (-) TimerEvent: {}
+[39.891037] (-) TimerEvent: {}
+[39.992692] (-) TimerEvent: {}
+[40.093421] (-) TimerEvent: {}
+[40.194211] (-) TimerEvent: {}
+[40.294751] (-) TimerEvent: {}
+[40.395428] (-) TimerEvent: {}
+[40.495730] (-) TimerEvent: {}
+[40.597792] (-) TimerEvent: {}
+[40.699405] (-) TimerEvent: {}
+[40.800216] (-) TimerEvent: {}
+[40.900679] (-) TimerEvent: {}
+[41.001373] (-) TimerEvent: {}
+[41.101679] (-) TimerEvent: {}
+[41.202405] (-) TimerEvent: {}
+[41.302741] (-) TimerEvent: {}
+[41.404960] (-) TimerEvent: {}
+[41.507270] (-) TimerEvent: {}
+[41.608532] (-) TimerEvent: {}
+[41.710241] (-) TimerEvent: {}
+[41.813483] (-) TimerEvent: {}
+[41.914404] (-) TimerEvent: {}
+[42.017736] (-) TimerEvent: {}
+[42.118292] (-) TimerEvent: {}
+[42.218857] (-) TimerEvent: {}
+[42.321405] (-) TimerEvent: {}
+[42.422034] (-) TimerEvent: {}
+[42.523222] (-) TimerEvent: {}
+[42.623863] (-) TimerEvent: {}
+[42.724646] (-) TimerEvent: {}
+[42.825290] (-) TimerEvent: {}
+[42.926025] (-) TimerEvent: {}
+[43.026555] (-) TimerEvent: {}
+[43.127176] (-) TimerEvent: {}
+[43.227980] (-) TimerEvent: {}
+[43.328302] (-) TimerEvent: {}
+[43.428747] (-) TimerEvent: {}
+[43.529429] (-) TimerEvent: {}
+[43.630211] (-) TimerEvent: {}
+[43.730896] (-) TimerEvent: {}
+[43.835551] (-) TimerEvent: {}
+[43.938446] (-) TimerEvent: {}
+[44.040948] (-) TimerEvent: {}
+[44.141317] (-) TimerEvent: {}
+[44.241967] (-) TimerEvent: {}
+[44.342803] (-) TimerEvent: {}
+[44.443524] (-) TimerEvent: {}
+[44.543935] (-) TimerEvent: {}
+[44.644671] (-) TimerEvent: {}
+[44.745418] (-) TimerEvent: {}
+[44.847828] (-) TimerEvent: {}
+[44.948352] (-) TimerEvent: {}
+[45.048831] (-) TimerEvent: {}
+[45.149553] (-) TimerEvent: {}
+[45.249981] (-) TimerEvent: {}
+[45.352487] (-) TimerEvent: {}
+[45.453155] (-) TimerEvent: {}
+[45.554162] (-) TimerEvent: {}
+[45.655839] (-) TimerEvent: {}
+[45.756731] (-) TimerEvent: {}
+[45.860188] (-) TimerEvent: {}
+[45.960781] (-) TimerEvent: {}
+[46.063023] (-) TimerEvent: {}
+[46.163943] (-) TimerEvent: {}
+[46.264739] (-) TimerEvent: {}
+[46.366320] (-) TimerEvent: {}
+[46.466942] (-) TimerEvent: {}
+[46.568103] (-) TimerEvent: {}
+[46.668776] (-) TimerEvent: {}
+[46.769822] (-) TimerEvent: {}
+[46.870545] (-) TimerEvent: {}
+[46.971727] (-) TimerEvent: {}
+[47.072549] (-) TimerEvent: {}
+[47.174255] (-) TimerEvent: {}
+[47.275732] (-) TimerEvent: {}
+[47.377972] (-) TimerEvent: {}
+[47.478387] (-) TimerEvent: {}
+[47.578879] (-) TimerEvent: {}
+[47.679366] (-) TimerEvent: {}
+[47.779743] (-) TimerEvent: {}
+[47.880390] (-) TimerEvent: {}
+[47.980772] (-) TimerEvent: {}
+[48.081433] (-) TimerEvent: {}
+[48.184713] (-) TimerEvent: {}
+[48.285306] (-) TimerEvent: {}
+[48.385725] (-) TimerEvent: {}
+[48.486342] (-) TimerEvent: {}
+[48.586863] (-) TimerEvent: {}
+[48.687249] (-) TimerEvent: {}
+[48.787878] (-) TimerEvent: {}
+[48.888322] (-) TimerEvent: {}
+[48.988827] (-) TimerEvent: {}
+[49.089300] (-) TimerEvent: {}
+[49.189741] (-) TimerEvent: {}
+[49.290320] (-) TimerEvent: {}
+[49.391067] (-) TimerEvent: {}
+[49.491780] (-) TimerEvent: {}
+[49.592216] (-) TimerEvent: {}
+[49.692783] (-) TimerEvent: {}
+[49.793582] (-) TimerEvent: {}
+[49.894264] (-) TimerEvent: {}
+[49.994588] (-) TimerEvent: {}
+[50.095312] (-) TimerEvent: {}
+[50.196003] (-) TimerEvent: {}
+[50.296483] (-) TimerEvent: {}
+[50.397237] (-) TimerEvent: {}
+[50.497951] (-) TimerEvent: {}
+[50.598621] (-) TimerEvent: {}
+[50.698953] (-) TimerEvent: {}
+[50.799491] (-) TimerEvent: {}
+[50.899819] (-) TimerEvent: {}
+[51.000300] (-) TimerEvent: {}
+[51.101052] (-) TimerEvent: {}
+[51.201386] (-) TimerEvent: {}
+[51.302068] (-) TimerEvent: {}
+[51.402714] (-) TimerEvent: {}
+[51.503492] (-) TimerEvent: {}
+[51.604389] (-) TimerEvent: {}
+[51.704893] (-) TimerEvent: {}
+[51.805285] (-) TimerEvent: {}
+[51.905906] (-) TimerEvent: {}
+[52.006344] (-) TimerEvent: {}
+[52.106705] (-) TimerEvent: {}
+[52.207410] (-) TimerEvent: {}
+[52.307819] (-) TimerEvent: {}
+[52.408121] (-) TimerEvent: {}
+[52.509237] (-) TimerEvent: {}
+[52.609848] (-) TimerEvent: {}
+[52.711349] (-) TimerEvent: {}
+[52.812035] (-) TimerEvent: {}
+[52.912544] (-) TimerEvent: {}
+[53.013984] (-) TimerEvent: {}
+[53.114838] (-) TimerEvent: {}
+[53.216330] (-) TimerEvent: {}
+[53.316822] (-) TimerEvent: {}
+[53.421056] (-) TimerEvent: {}
+[53.522120] (-) TimerEvent: {}
+[53.622542] (-) TimerEvent: {}
+[53.723458] (-) TimerEvent: {}
+[53.823878] (-) TimerEvent: {}
+[53.924159] (-) TimerEvent: {}
+[54.025535] (-) TimerEvent: {}
+[54.125977] (-) TimerEvent: {}
+[54.226827] (-) TimerEvent: {}
+[54.327310] (-) TimerEvent: {}
+[54.427781] (-) TimerEvent: {}
+[54.533609] (-) TimerEvent: {}
+[54.634282] (-) TimerEvent: {}
+[54.734817] (-) TimerEvent: {}
+[54.838734] (-) TimerEvent: {}
+[54.939231] (-) TimerEvent: {}
+[55.039735] (-) TimerEvent: {}
+[55.140152] (-) TimerEvent: {}
+[55.240754] (-) TimerEvent: {}
+[55.341404] (-) TimerEvent: {}
+[55.441894] (-) TimerEvent: {}
+[55.542326] (-) TimerEvent: {}
+[55.642998] (-) TimerEvent: {}
+[55.743383] (-) TimerEvent: {}
+[55.843672] (-) TimerEvent: {}
+[55.944155] (-) TimerEvent: {}
+[56.044880] (-) TimerEvent: {}
+[56.145310] (-) TimerEvent: {}
+[56.245813] (-) TimerEvent: {}
+[56.346121] (-) TimerEvent: {}
+[56.485267] (-) TimerEvent: {}
+[56.586058] (-) TimerEvent: {}
+[56.686784] (-) TimerEvent: {}
+[56.787925] (-) TimerEvent: {}
+[56.888332] (-) TimerEvent: {}
+[56.988710] (-) TimerEvent: {}
+[57.089424] (-) TimerEvent: {}
+[57.190174] (-) TimerEvent: {}
+[57.300111] (-) TimerEvent: {}
+[57.301323] (teb_local_planner) StdoutLine: {'line': b'[ 30%] Building CXX object CMakeFiles/teb_local_planner.dir/src/homotopy_class_planner.cpp.o\n'}
+[57.400572] (-) TimerEvent: {}
+[57.501051] (-) TimerEvent: {}
+[57.602146] (-) TimerEvent: {}
+[57.702868] (-) TimerEvent: {}
+[57.803273] (-) TimerEvent: {}
+[57.903568] (-) TimerEvent: {}
+[58.003884] (-) TimerEvent: {}
+[58.104635] (-) TimerEvent: {}
+[58.205372] (-) TimerEvent: {}
+[58.306197] (-) TimerEvent: {}
+[58.406957] (-) TimerEvent: {}
+[58.507725] (-) TimerEvent: {}
+[58.607975] (-) TimerEvent: {}
+[58.708359] (-) TimerEvent: {}
+[58.809512] (-) TimerEvent: {}
+[58.909881] (-) TimerEvent: {}
+[59.010265] (-) TimerEvent: {}
+[59.111007] (-) TimerEvent: {}
+[59.211872] (-) TimerEvent: {}
+[59.312364] (-) TimerEvent: {}
+[59.412700] (-) TimerEvent: {}
+[59.513310] (-) TimerEvent: {}
+[59.613605] (-) TimerEvent: {}
+[59.713992] (-) TimerEvent: {}
+[59.816741] (-) TimerEvent: {}
+[59.917782] (-) TimerEvent: {}
+[60.019068] (-) TimerEvent: {}
+[60.119770] (-) TimerEvent: {}
+[60.220219] (-) TimerEvent: {}
+[60.321368] (-) TimerEvent: {}
+[60.422663] (-) TimerEvent: {}
+[60.523557] (-) TimerEvent: {}
+[60.624127] (-) TimerEvent: {}
+[60.724880] (-) TimerEvent: {}
+[60.825597] (-) TimerEvent: {}
+[60.926006] (-) TimerEvent: {}
+[61.026304] (-) TimerEvent: {}
+[61.127090] (-) TimerEvent: {}
+[61.227802] (-) TimerEvent: {}
+[61.328149] (-) TimerEvent: {}
+[61.428549] (-) TimerEvent: {}
+[61.529245] (-) TimerEvent: {}
+[61.629511] (-) TimerEvent: {}
+[61.729881] (-) TimerEvent: {}
+[61.830235] (-) TimerEvent: {}
+[61.932857] (-) TimerEvent: {}
+[62.033438] (-) TimerEvent: {}
+[62.134918] (-) TimerEvent: {}
+[62.236051] (-) TimerEvent: {}
+[62.336747] (-) TimerEvent: {}
+[62.437296] (-) TimerEvent: {}
+[62.538334] (-) TimerEvent: {}
+[62.638908] (-) TimerEvent: {}
+[62.739406] (-) TimerEvent: {}
+[62.839747] (-) TimerEvent: {}
+[62.940247] (-) TimerEvent: {}
+[63.040762] (-) TimerEvent: {}
+[63.141163] (-) TimerEvent: {}
+[63.241911] (-) TimerEvent: {}
+[63.342740] (-) TimerEvent: {}
+[63.443776] (-) TimerEvent: {}
+[63.544216] (-) TimerEvent: {}
+[63.644670] (-) TimerEvent: {}
+[63.745428] (-) TimerEvent: {}
+[63.845663] (-) TimerEvent: {}
+[63.946165] (-) TimerEvent: {}
+[64.046417] (-) TimerEvent: {}
+[64.146648] (-) TimerEvent: {}
+[64.247367] (-) TimerEvent: {}
+[64.348147] (-) TimerEvent: {}
+[64.448939] (-) TimerEvent: {}
+[64.549315] (-) TimerEvent: {}
+[64.649882] (-) TimerEvent: {}
+[64.750176] (-) TimerEvent: {}
+[64.850831] (-) TimerEvent: {}
+[64.951473] (-) TimerEvent: {}
+[65.051794] (-) TimerEvent: {}
+[65.152044] (-) TimerEvent: {}
+[65.252769] (-) TimerEvent: {}
+[65.353493] (-) TimerEvent: {}
+[65.454191] (-) TimerEvent: {}
+[65.554456] (-) TimerEvent: {}
+[65.654695] (-) TimerEvent: {}
+[65.755286] (-) TimerEvent: {}
+[65.855978] (-) TimerEvent: {}
+[65.956695] (-) TimerEvent: {}
+[66.057376] (-) TimerEvent: {}
+[66.158088] (-) TimerEvent: {}
+[66.258769] (-) TimerEvent: {}
+[66.359105] (-) TimerEvent: {}
+[66.459673] (-) TimerEvent: {}
+[66.560366] (-) TimerEvent: {}
+[66.661038] (-) TimerEvent: {}
+[66.761267] (-) TimerEvent: {}
+[66.861547] (-) TimerEvent: {}
+[66.961979] (-) TimerEvent: {}
+[67.062385] (-) TimerEvent: {}
+[67.164398] (-) TimerEvent: {}
+[67.264958] (-) TimerEvent: {}
+[67.365349] (-) TimerEvent: {}
+[67.465917] (-) TimerEvent: {}
+[67.566642] (-) TimerEvent: {}
+[67.667361] (-) TimerEvent: {}
+[67.768177] (-) TimerEvent: {}
+[67.868821] (-) TimerEvent: {}
+[67.969534] (-) TimerEvent: {}
+[68.070301] (-) TimerEvent: {}
+[68.170951] (-) TimerEvent: {}
+[68.271635] (-) TimerEvent: {}
+[68.372325] (-) TimerEvent: {}
+[68.473019] (-) TimerEvent: {}
+[68.573698] (-) TimerEvent: {}
+[68.674407] (-) TimerEvent: {}
+[68.775080] (-) TimerEvent: {}
+[68.875773] (-) TimerEvent: {}
+[68.976466] (-) TimerEvent: {}
+[69.077160] (-) TimerEvent: {}
+[69.177907] (-) TimerEvent: {}
+[69.278527] (-) TimerEvent: {}
+[69.379220] (-) TimerEvent: {}
+[69.479948] (-) TimerEvent: {}
+[69.580201] (-) TimerEvent: {}
+[69.666344] (teb_local_planner) StdoutLine: {'line': b'[ 40%] Building CXX object CMakeFiles/teb_local_planner.dir/src/teb_local_planner_ros.cpp.o\n'}
+[69.680692] (-) TimerEvent: {}
+[69.781126] (-) TimerEvent: {}
+[69.883036] (-) TimerEvent: {}
+[69.983880] (-) TimerEvent: {}
+[70.085168] (-) TimerEvent: {}
+[70.185887] (-) TimerEvent: {}
+[70.286559] (-) TimerEvent: {}
+[70.387263] (-) TimerEvent: {}
+[70.487950] (-) TimerEvent: {}
+[70.588655] (-) TimerEvent: {}
+[70.689324] (-) TimerEvent: {}
+[70.789660] (-) TimerEvent: {}
+[70.890351] (-) TimerEvent: {}
+[70.991037] (-) TimerEvent: {}
+[71.091762] (-) TimerEvent: {}
+[71.192472] (-) TimerEvent: {}
+[71.293505] (-) TimerEvent: {}
+[71.393842] (-) TimerEvent: {}
+[71.494544] (-) TimerEvent: {}
+[71.595226] (-) TimerEvent: {}
+[71.695917] (-) TimerEvent: {}
+[71.796619] (-) TimerEvent: {}
+[71.897292] (-) TimerEvent: {}
+[71.997974] (-) TimerEvent: {}
+[72.098690] (-) TimerEvent: {}
+[72.199418] (-) TimerEvent: {}
+[72.300161] (-) TimerEvent: {}
+[72.400770] (-) TimerEvent: {}
+[72.501248] (-) TimerEvent: {}
+[72.601868] (-) TimerEvent: {}
+[72.702268] (-) TimerEvent: {}
+[72.803065] (-) TimerEvent: {}
+[72.903421] (-) TimerEvent: {}
+[73.003961] (-) TimerEvent: {}
+[73.105047] (-) TimerEvent: {}
+[73.205462] (-) TimerEvent: {}
+[73.305969] (-) TimerEvent: {}
+[73.406333] (-) TimerEvent: {}
+[73.506825] (-) TimerEvent: {}
+[73.607316] (-) TimerEvent: {}
+[73.707920] (-) TimerEvent: {}
+[73.808202] (-) TimerEvent: {}
+[73.908451] (-) TimerEvent: {}
+[74.009212] (-) TimerEvent: {}
+[74.109902] (-) TimerEvent: {}
+[74.210431] (-) TimerEvent: {}
+[74.311757] (-) TimerEvent: {}
+[74.412219] (-) TimerEvent: {}
+[74.512514] (-) TimerEvent: {}
+[74.613067] (-) TimerEvent: {}
+[74.713888] (-) TimerEvent: {}
+[74.814425] (-) TimerEvent: {}
+[74.915251] (-) TimerEvent: {}
+[75.015865] (-) TimerEvent: {}
+[75.116279] (-) TimerEvent: {}
+[75.216696] (-) TimerEvent: {}
+[75.317385] (-) TimerEvent: {}
+[75.417852] (-) TimerEvent: {}
+[75.518578] (-) TimerEvent: {}
+[75.618892] (-) TimerEvent: {}
+[75.719316] (-) TimerEvent: {}
+[75.820001] (-) TimerEvent: {}
+[75.920607] (-) TimerEvent: {}
+[76.020909] (-) TimerEvent: {}
+[76.121440] (-) TimerEvent: {}
+[76.222142] (-) TimerEvent: {}
+[76.322811] (-) TimerEvent: {}
+[76.423509] (-) TimerEvent: {}
+[76.524368] (-) TimerEvent: {}
+[76.624894] (-) TimerEvent: {}
+[76.725558] (-) TimerEvent: {}
+[76.826245] (-) TimerEvent: {}
+[76.926944] (-) TimerEvent: {}
+[77.027657] (-) TimerEvent: {}
+[77.128326] (-) TimerEvent: {}
+[77.229013] (-) TimerEvent: {}
+[77.329657] (-) TimerEvent: {}
+[77.429942] (-) TimerEvent: {}
+[77.530627] (-) TimerEvent: {}
+[77.631395] (-) TimerEvent: {}
+[77.732005] (-) TimerEvent: {}
+[77.832772] (-) TimerEvent: {}
+[77.933368] (-) TimerEvent: {}
+[78.033603] (-) TimerEvent: {}
+[78.134281] (-) TimerEvent: {}
+[78.234985] (-) TimerEvent: {}
+[78.335661] (-) TimerEvent: {}
+[78.436359] (-) TimerEvent: {}
+[78.537038] (-) TimerEvent: {}
+[78.637755] (-) TimerEvent: {}
+[78.738446] (-) TimerEvent: {}
+[78.839102] (-) TimerEvent: {}
+[78.939804] (-) TimerEvent: {}
+[79.040531] (-) TimerEvent: {}
+[79.141236] (-) TimerEvent: {}
+[79.241477] (-) TimerEvent: {}
+[79.342200] (-) TimerEvent: {}
+[79.442430] (-) TimerEvent: {}
+[79.543132] (-) TimerEvent: {}
+[79.643820] (-) TimerEvent: {}
+[79.744501] (-) TimerEvent: {}
+[79.845186] (-) TimerEvent: {}
+[79.945886] (-) TimerEvent: {}
+[80.046579] (-) TimerEvent: {}
+[80.147246] (-) TimerEvent: {}
+[80.247945] (-) TimerEvent: {}
+[80.348624] (-) TimerEvent: {}
+[80.449332] (-) TimerEvent: {}
+[80.550004] (-) TimerEvent: {}
+[80.650702] (-) TimerEvent: {}
+[80.751383] (-) TimerEvent: {}
+[80.852056] (-) TimerEvent: {}
+[80.952854] (-) TimerEvent: {}
+[81.053503] (-) TimerEvent: {}
+[81.154183] (-) TimerEvent: {}
+[81.255417] (-) TimerEvent: {}
+[81.356125] (-) TimerEvent: {}
+[81.456892] (-) TimerEvent: {}
+[81.557501] (-) TimerEvent: {}
+[81.658247] (-) TimerEvent: {}
+[81.758899] (-) TimerEvent: {}
+[81.859568] (-) TimerEvent: {}
+[81.960261] (-) TimerEvent: {}
+[82.060968] (-) TimerEvent: {}
+[82.161632] (-) TimerEvent: {}
+[82.262320] (-) TimerEvent: {}
+[82.363010] (-) TimerEvent: {}
+[82.463743] (-) TimerEvent: {}
+[82.564454] (-) TimerEvent: {}
+[82.665137] (-) TimerEvent: {}
+[82.765840] (-) TimerEvent: {}
+[82.866516] (-) TimerEvent: {}
+[82.967261] (-) TimerEvent: {}
+[83.067924] (-) TimerEvent: {}
+[83.168644] (-) TimerEvent: {}
+[83.269328] (-) TimerEvent: {}
+[83.370032] (-) TimerEvent: {}
+[83.470376] (-) TimerEvent: {}
+[83.571004] (-) TimerEvent: {}
+[83.671672] (-) TimerEvent: {}
+[83.771985] (-) TimerEvent: {}
+[83.872668] (-) TimerEvent: {}
+[83.973360] (-) TimerEvent: {}
+[84.074054] (-) TimerEvent: {}
+[84.174750] (-) TimerEvent: {}
+[84.275424] (-) TimerEvent: {}
+[84.376132] (-) TimerEvent: {}
+[84.476390] (-) TimerEvent: {}
+[84.577092] (-) TimerEvent: {}
+[84.677760] (-) TimerEvent: {}
+[84.741936] (teb_local_planner) StderrLine: {'line': b'In file included from /opt/ros/jazzy/include/pluginlib/pluginlib/class_loader_imp.hpp:57,\n'}
+[84.742254] (teb_local_planner) StderrLine: {'line': b'                 from /opt/ros/jazzy/include/pluginlib/pluginlib/class_loader.hpp:334,\n'}
+[84.742386] (teb_local_planner) StderrLine: {'line': b'                 from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_local_planner/teb_local_planner/include/teb_local_planner/teb_local_planner_ros.h:42,\n'}
+[84.742491] (teb_local_planner) StderrLine: {'line': b'                 from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_local_planner/teb_local_planner/src/teb_local_planner_ros.cpp:39:\n'}
+[84.742589] (teb_local_planner) StderrLine: {'line': b'/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function \xe2\x80\x98void costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::Rate::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)\xe2\x80\x99:\n'}
+[84.742723] (teb_local_planner) StderrLine: {'line': b'/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41: warning: too many arguments for format [-Wformat-extra-args]\n'}
+[84.742826] (teb_local_planner) StderrLine: {'line': b'  197 |         RCLCPP_DEBUG(nh_->get_logger(), "costmap_converter", "Spinning up a thread for the CostmapToPolygons plugin");\n'}
+[84.742921] (teb_local_planner) StderrLine: {'line': b'      |                                         ^~~~~~~~~~~~~~~~~~~\n'}
+[84.778013] (-) TimerEvent: {}
+[84.878717] (-) TimerEvent: {}
+[84.926251] (teb_local_planner) StderrLine: {'line': b'/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h: In member function \xe2\x80\x98void costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const std::string&, rclcpp::Node::SharedPtr)\xe2\x80\x99:\n'}
+[84.926493] (teb_local_planner) StderrLine: {'line': b'/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32: warning: format \xe2\x80\x98%s\xe2\x80\x99 expects argument of type \xe2\x80\x98char*\xe2\x80\x99, but argument 5 has type \xe2\x80\x98const std::string\xe2\x80\x99 {aka \xe2\x80\x98const std::__cxx11::basic_string<char>\xe2\x80\x99} [-Wformat=]\n'}
+[84.926608] (teb_local_planner) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);\n'}
+[84.926766] (teb_local_planner) StderrLine: {'line': b'      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[84.926870] (teb_local_planner) StderrLine: {'line': b'In file included from /home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_local_planner/teb_local_planner/include/teb_local_planner/teb_local_planner_ros.h:68:\n'}
+[84.926960] (teb_local_planner) StderrLine: {'line': b'/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119: note: format string is defined here\n'}
+[84.927048] (teb_local_planner) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded.", plugin_name);\n'}
+[84.927134] (teb_local_planner) StderrLine: {'line': b'      |                                                                                                                      ~^\n'}
+[84.927332] (teb_local_planner) StderrLine: {'line': b'      |                                                                                                                       |\n'}
+[84.927423] (teb_local_planner) StderrLine: {'line': b'      |                                                                                                                       char*\n'}
+[84.978913] (-) TimerEvent: {}
+[85.079257] (-) TimerEvent: {}
+[85.179910] (-) TimerEvent: {}
+[85.280287] (-) TimerEvent: {}
+[85.380987] (-) TimerEvent: {}
+[85.481450] (-) TimerEvent: {}
+[85.582384] (-) TimerEvent: {}
+[85.682838] (-) TimerEvent: {}
+[85.783155] (-) TimerEvent: {}
+[85.883987] (-) TimerEvent: {}
+[85.984694] (-) TimerEvent: {}
+[86.086086] (-) TimerEvent: {}
+[86.186994] (-) TimerEvent: {}
+[86.291167] (-) TimerEvent: {}
+[86.393081] (-) TimerEvent: {}
+[86.493843] (-) TimerEvent: {}
+[86.595030] (-) TimerEvent: {}
+[86.696029] (-) TimerEvent: {}
+[86.796955] (-) TimerEvent: {}
+[86.897612] (-) TimerEvent: {}
+[86.998304] (-) TimerEvent: {}
+[87.098719] (-) TimerEvent: {}
+[87.198992] (-) TimerEvent: {}
+[87.299532] (-) TimerEvent: {}
+[87.399872] (-) TimerEvent: {}
+[87.500610] (-) TimerEvent: {}
+[87.601319] (-) TimerEvent: {}
+[87.702124] (-) TimerEvent: {}
+[87.802596] (-) TimerEvent: {}
+[87.910433] (-) TimerEvent: {}
+[88.014868] (-) TimerEvent: {}
+[88.115681] (-) TimerEvent: {}
+[88.216594] (-) TimerEvent: {}
+[88.317535] (-) TimerEvent: {}
+[88.418423] (-) TimerEvent: {}
+[88.518816] (-) TimerEvent: {}
+[88.619119] (-) TimerEvent: {}
+[88.735770] (-) TimerEvent: {}
+[88.840156] (-) TimerEvent: {}
+[88.940561] (-) TimerEvent: {}
+[89.041076] (-) TimerEvent: {}
+[89.141464] (-) TimerEvent: {}
+[89.241758] (-) TimerEvent: {}
+[89.345918] (-) TimerEvent: {}
+[89.446420] (-) TimerEvent: {}
+[89.546864] (-) TimerEvent: {}
+[89.647273] (-) TimerEvent: {}
+[89.747668] (-) TimerEvent: {}
+[89.848173] (-) TimerEvent: {}
+[89.948938] (-) TimerEvent: {}
+[90.049465] (-) TimerEvent: {}
+[90.150174] (-) TimerEvent: {}
+[90.250688] (-) TimerEvent: {}
+[90.351044] (-) TimerEvent: {}
+[90.451450] (-) TimerEvent: {}
+[90.551974] (-) TimerEvent: {}
+[90.652444] (-) TimerEvent: {}
+[90.752960] (-) TimerEvent: {}
+[90.853594] (-) TimerEvent: {}
+[90.913568] (teb_local_planner) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/teb_local_planner.dir/src/graph_search.cpp.o\n'}
+[90.953735] (-) TimerEvent: {}
+[91.054516] (-) TimerEvent: {}
+[91.155331] (-) TimerEvent: {}
+[91.256145] (-) TimerEvent: {}
+[91.356536] (-) TimerEvent: {}
+[91.457035] (-) TimerEvent: {}
+[91.557990] (-) TimerEvent: {}
+[91.658441] (-) TimerEvent: {}
+[91.759109] (-) TimerEvent: {}
+[91.859783] (-) TimerEvent: {}
+[91.960485] (-) TimerEvent: {}
+[92.061194] (-) TimerEvent: {}
+[92.161865] (-) TimerEvent: {}
+[92.262547] (-) TimerEvent: {}
+[92.363238] (-) TimerEvent: {}
+[92.464027] (-) TimerEvent: {}
+[92.564638] (-) TimerEvent: {}
+[92.665303] (-) TimerEvent: {}
+[92.765993] (-) TimerEvent: {}
+[92.866696] (-) TimerEvent: {}
+[92.967372] (-) TimerEvent: {}
+[93.068051] (-) TimerEvent: {}
+[93.168791] (-) TimerEvent: {}
+[93.269435] (-) TimerEvent: {}
+[93.370119] (-) TimerEvent: {}
+[93.470824] (-) TimerEvent: {}
+[93.571535] (-) TimerEvent: {}
+[93.671911] (-) TimerEvent: {}
+[93.775727] (-) TimerEvent: {}
+[93.875947] (-) TimerEvent: {}
+[93.976836] (-) TimerEvent: {}
+[94.077376] (-) TimerEvent: {}
+[94.179465] (-) TimerEvent: {}
+[94.280739] (-) TimerEvent: {}
+[94.381550] (-) TimerEvent: {}
+[94.481918] (-) TimerEvent: {}
+[94.582597] (-) TimerEvent: {}
+[94.683478] (-) TimerEvent: {}
+[94.784362] (-) TimerEvent: {}
+[94.884896] (-) TimerEvent: {}
+[94.985564] (-) TimerEvent: {}
+[95.086275] (-) TimerEvent: {}
+[95.186934] (-) TimerEvent: {}
+[95.287621] (-) TimerEvent: {}
+[95.389712] (-) TimerEvent: {}
+[95.490358] (-) TimerEvent: {}
+[95.591409] (-) TimerEvent: {}
+[95.692746] (-) TimerEvent: {}

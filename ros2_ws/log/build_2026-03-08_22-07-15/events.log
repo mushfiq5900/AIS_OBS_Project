@@ -1,0 +1,95 @@
+[0.000000] (-) TimerEvent: {}
+[0.000327] (costmap_converter_msgs) JobQueued: {'identifier': 'costmap_converter_msgs', 'dependencies': OrderedDict()}
+[0.000395] (costmap_converter) JobQueued: {'identifier': 'costmap_converter', 'dependencies': OrderedDict({'costmap_converter_msgs': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs'})}
+[0.000452] (teb_msgs) JobQueued: {'identifier': 'teb_msgs', 'dependencies': OrderedDict({'costmap_converter_msgs': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs'})}
+[0.000501] (teb_local_planner) JobQueued: {'identifier': 'teb_local_planner', 'dependencies': OrderedDict({'costmap_converter_msgs': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs', 'costmap_converter': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter', 'teb_msgs': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs'})}
+[0.001215] (costmap_converter_msgs) JobStarted: {'identifier': 'costmap_converter_msgs'}
+[0.021993] (costmap_converter_msgs) JobProgress: {'identifier': 'costmap_converter_msgs', 'progress': 'cmake'}
+[0.023131] (costmap_converter_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs'], 'cwd': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mushfiqul', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/mushfiqul/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mushfiqul', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_local_planner', 'TERM_PROGRAM_VERSION': '1.109.5', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/mushfiqul/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/226/usr/share/code/code', 'MANAGERPID': '4854', 'SYSTEMD_EXEC_PID': '5081', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '157069', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mushfiqul', 'JOURNAL_STREAM': '9:44192', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'mushfiqul', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/mushfiqul/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/mushfiqul/.local/bin:/home/mushfiqul/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mushfiqul-VMware-Virtual-Platform:@/tmp/.ICE-unix/5049,unix/mushfiqul-VMware-Virtual-Platform:/tmp/.ICE-unix/5049', 'GTK_EXE_PREFIX': '/snap/code/226/usr', 'INVOCATION_ID': '221881d2428241baa136386183b61530', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/226/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/mushfiqul/snap/code/226/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.D8JQL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8bac5a4c3b.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/mushfiqul/snap/code/226/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter_msgs', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/mushfiqul/snap/code/226/.local/share:/home/mushfiqul/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099792] (-) TimerEvent: {}
+[0.200481] (-) TimerEvent: {}
+[0.246420] (costmap_converter_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.301018] (-) TimerEvent: {}
+[0.401535] (-) TimerEvent: {}
+[0.417712] (costmap_converter_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.450232] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.501854] (-) TimerEvent: {}
+[0.602551] (-) TimerEvent: {}
+[0.609458] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.624216] (costmap_converter_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.624558] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.625375] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.641594] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.702633] (-) TimerEvent: {}
+[0.803044] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.803322] (-) TimerEvent: {}
+[0.818716] (costmap_converter_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.819112] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.819967] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.864292] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.904446] (-) TimerEvent: {}
+[1.006489] (-) TimerEvent: {}
+[1.107146] (-) TimerEvent: {}
+[1.144879] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.207625] (-) TimerEvent: {}
+[1.307852] (costmap_converter_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.308071] (-) TimerEvent: {}
+[1.408469] (-) TimerEvent: {}
+[1.425112] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[1.508976] (-) TimerEvent: {}
+[1.526394] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.562037] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.603529] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.609353] (-) TimerEvent: {}
+[1.649530] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.690353] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.709553] (-) TimerEvent: {}
+[1.766094] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.802842] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.810105] (-) TimerEvent: {}
+[1.910678] (-) TimerEvent: {}
+[2.011352] (-) TimerEvent: {}
+[2.111858] (-) TimerEvent: {}
+[2.212533] (-) TimerEvent: {}
+[2.313107] (-) TimerEvent: {}
+[2.413351] (-) TimerEvent: {}
+[2.514419] (-) TimerEvent: {}
+[2.614916] (-) TimerEvent: {}
+[2.715328] (-) TimerEvent: {}
+[2.814828] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.815740] (-) TimerEvent: {}
+[2.916699] (-) TimerEvent: {}
+[3.017399] (-) TimerEvent: {}
+[3.118423] (-) TimerEvent: {}
+[3.219216] (-) TimerEvent: {}
+[3.319945] (-) TimerEvent: {}
+[3.420528] (-) TimerEvent: {}
+[3.521064] (-) TimerEvent: {}
+[3.621614] (-) TimerEvent: {}
+[3.722282] (-) TimerEvent: {}
+[3.822865] (-) TimerEvent: {}
+[3.923463] (-) TimerEvent: {}
+[4.023920] (-) TimerEvent: {}
+[4.124483] (-) TimerEvent: {}
+[4.224837] (-) TimerEvent: {}
+[4.325509] (-) TimerEvent: {}
+[4.425933] (-) TimerEvent: {}
+[4.526393] (-) TimerEvent: {}
+[4.633913] (-) TimerEvent: {}
+[4.737278] (-) TimerEvent: {}
+[4.838055] (-) TimerEvent: {}
+[4.938672] (-) TimerEvent: {}
+[5.002361] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.039407] (-) TimerEvent: {}
+[5.141191] (-) TimerEvent: {}
+[5.241756] (-) TimerEvent: {}
+[5.342519] (-) TimerEvent: {}
+[5.443275] (-) TimerEvent: {}
+[5.543608] (-) TimerEvent: {}
+[5.618923] (costmap_converter_msgs) CommandEnded: {'returncode': -2}
+[5.645240] (-) TimerEvent: {}
+[5.661406] (costmap_converter_msgs) JobEnded: {'identifier': 'costmap_converter_msgs', 'rc': 'SIGINT'}
+[5.672729] (costmap_converter) JobSkipped: {'identifier': 'costmap_converter'}
+[5.672822] (teb_msgs) JobSkipped: {'identifier': 'teb_msgs'}
+[5.672866] (teb_local_planner) JobSkipped: {'identifier': 'teb_local_planner'}
+[5.672907] (-) EventReactorShutdown: {}

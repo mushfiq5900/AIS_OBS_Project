@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="dynamic_obstacles">
+    <physics type="ode"><real_time_update_rate>1000.0</real_time_update_rate><max_step_size>0.001</max_step_size></physics>
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+    <model name="dyn_obs_1"><static>false</static><pose>2.0 2.0 0.25 0 0 0</pose>
+      <link name="link"><inertial><mass>1.0</mass></inertial>
+        <collision name="c"><geometry><cylinder><radius>0.2</radius><length>0.5</length></cylinder></geometry></collision>
+        <visual name="v"><geometry><cylinder><radius>0.2</radius><length>0.5</length></cylinder></geometry>
+        <material><ambient>0.2 0.8 0.2 1</ambient></material></visual>
+      </link></model>
+    <model name="dyn_obs_2"><static>false</static><pose>3.0 -1.5 0.25 0 0 0</pose>
+      <link name="link"><inertial><mass>1.0</mass></inertial>
+        <collision name="c"><geometry><cylinder><radius>0.2</radius><length>0.5</length></cylinder></geometry></collision>
+        <visual name="v"><geometry><cylinder><radius>0.2</radius><length>0.5</length></cylinder></geometry>
+        <material><ambient>0.9 0.7 0.1 1</ambient></material></visual>
+      </link></model>
+  </world>
+</sdf>

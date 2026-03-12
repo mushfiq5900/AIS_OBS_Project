@@ -1,0 +1,1 @@
+/home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_obstacle_avoidance/scripts/dynamic_obstacle_spawner.py

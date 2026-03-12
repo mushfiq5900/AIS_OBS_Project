@@ -1,0 +1,221 @@
+[0.191s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'teb_obstacle_avoidance', '--symlink-install']
+[0.191s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['teb_obstacle_avoidance'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x743f4e86a570>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x743f4e86a150>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x743f4e86a150>>)
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.269s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mushfiqul/AIS_OBS_Project/ros2_ws'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extension 'ros'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extensions ['cmake', 'python']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extension 'cmake'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extension 'python'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extensions ['python_setup_py']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter) by extension 'python_setup_py'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter) by extension 'ros'
+[0.328s] DEBUG:colcon.colcon_core.package_identification:Package 'src/costmap_converter/costmap_converter' with type 'ros.ament_cmake' and name 'costmap_converter'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter_msgs) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter_msgs) by extension 'ignore_ament_install'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter_msgs) by extensions ['colcon_pkg']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter_msgs) by extension 'colcon_pkg'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter_msgs) by extensions ['colcon_meta']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter_msgs) by extension 'colcon_meta'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter_msgs) by extensions ['ros']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/costmap_converter/costmap_converter_msgs) by extension 'ros'
+[0.330s] DEBUG:colcon.colcon_core.package_identification:Package 'src/costmap_converter/costmap_converter_msgs' with type 'ros.ament_cmake' and name 'costmap_converter_msgs'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extensions ['ros']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extension 'ros'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extensions ['cmake', 'python']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extension 'cmake'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extension 'python'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extensions ['python_setup_py']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner) by extension 'python_setup_py'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_local_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_local_planner) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_local_planner) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_local_planner) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_local_planner) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_local_planner) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_local_planner) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_local_planner) by extensions ['ros']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_local_planner) by extension 'ros'
+[0.335s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teb_local_planner/teb_local_planner' with type 'ros.ament_cmake' and name 'teb_local_planner'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_msgs) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_msgs) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_msgs) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_msgs) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_msgs) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_msgs) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_msgs) by extensions ['ros']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_local_planner/teb_msgs) by extension 'ros'
+[0.337s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teb_local_planner/teb_msgs' with type 'ros.ament_cmake' and name 'teb_msgs'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_obstacle_avoidance) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_obstacle_avoidance) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_obstacle_avoidance) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_obstacle_avoidance) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_obstacle_avoidance) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_obstacle_avoidance) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_obstacle_avoidance) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_obstacle_avoidance) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/teb_obstacle_avoidance) by extension 'ros'
+[0.340s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teb_obstacle_avoidance' with type 'ros.ament_cmake' and name 'teb_obstacle_avoidance'
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'costmap_converter_msgs' in 'src/costmap_converter/costmap_converter_msgs'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'costmap_converter' in 'src/costmap_converter/costmap_converter'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'teb_msgs' in 'src/teb_local_planner/teb_msgs'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'teb_local_planner' in 'src/teb_local_planner/teb_local_planner'
+[0.375s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.375s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.379s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/mushfiqul/AIS_OBS_Project/ros2_ws/install
+[0.382s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 382 installed packages in /opt/ros/jazzy
+[0.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'teb_obstacle_avoidance' build argument 'cmake_args' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'teb_obstacle_avoidance' build argument 'cmake_target' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'teb_obstacle_avoidance' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'teb_obstacle_avoidance' build argument 'cmake_clean_cache' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'teb_obstacle_avoidance' build argument 'cmake_clean_first' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'teb_obstacle_avoidance' build argument 'cmake_force_configure' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'teb_obstacle_avoidance' build argument 'ament_cmake_args' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'teb_obstacle_avoidance' build argument 'catkin_cmake_args' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'teb_obstacle_avoidance' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.501s] DEBUG:colcon.colcon_core.verb:Building package 'teb_obstacle_avoidance' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_obstacle_avoidance', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance', 'merge_install': False, 'path': '/home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_obstacle_avoidance', 'symlink_install': True, 'test_result_base': None}
+[0.501s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.503s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_obstacle_avoidance' with build type 'ament_cmake'
+[0.503s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_obstacle_avoidance'
+[0.507s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.508s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.508s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_obstacle_avoidance': CMAKE_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_local_planner:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_obstacle_avoidance -- -j8 -l8
+[1.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_obstacle_avoidance' returned '0': CMAKE_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_local_planner:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_obstacle_avoidance -- -j8 -l8
+[1.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_obstacle_avoidance': CMAKE_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_local_planner:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_obstacle_avoidance
+[1.697s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teb_obstacle_avoidance)
+[1.699s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_obstacle_avoidance' returned '0': CMAKE_PREFIX_PATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_local_planner:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_msgs/lib/python3.12/site-packages:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/costmap_converter_msgs/lib/python3.12/site-packages:/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_obstacle_avoidance
+[1.706s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance' for CMake module files
+[1.707s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance' for CMake config files
+[1.708s] Level 1:colcon.colcon_core.shell:create_environment_hook('teb_obstacle_avoidance', 'cmake_prefix_path')
+[1.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/cmake_prefix_path.ps1'
+[1.711s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/cmake_prefix_path.dsv'
+[1.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/cmake_prefix_path.sh'
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/lib'
+[1.716s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/bin'
+[1.716s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/lib/pkgconfig/teb_obstacle_avoidance.pc'
+[1.716s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/lib/python3.12/site-packages'
+[1.717s] Level 1:colcon.colcon_core.shell:create_environment_hook('teb_obstacle_avoidance', 'pythonpath')
+[1.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/pythonpath.ps1'
+[1.719s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/pythonpath.dsv'
+[1.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/pythonpath.sh'
+[1.726s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/bin'
+[1.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/package.ps1'
+[1.729s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/package.dsv'
+[1.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/package.sh'
+[1.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/package.bash'
+[1.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/package.zsh'
+[1.739s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/colcon-core/packages/teb_obstacle_avoidance)
+[1.741s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teb_obstacle_avoidance)
+[1.742s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance' for CMake module files
+[1.747s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance' for CMake config files
+[1.749s] Level 1:colcon.colcon_core.shell:create_environment_hook('teb_obstacle_avoidance', 'cmake_prefix_path')
+[1.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/cmake_prefix_path.ps1'
+[1.752s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/cmake_prefix_path.dsv'
+[1.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/cmake_prefix_path.sh'
+[1.756s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/lib'
+[1.756s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/bin'
+[1.756s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/lib/pkgconfig/teb_obstacle_avoidance.pc'
+[1.757s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/lib/python3.12/site-packages'
+[1.757s] Level 1:colcon.colcon_core.shell:create_environment_hook('teb_obstacle_avoidance', 'pythonpath')
+[1.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/pythonpath.ps1'
+[1.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/pythonpath.dsv'
+[1.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/hook/pythonpath.sh'
+[1.763s] Level 1:colcon.colcon_core.environment:checking '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/bin'
+[1.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/package.ps1'
+[1.766s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/package.dsv'
+[1.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/package.sh'
+[1.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/package.bash'
+[1.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/teb_obstacle_avoidance/package.zsh'
+[1.772s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/teb_obstacle_avoidance/share/colcon-core/packages/teb_obstacle_avoidance)
+[1.773s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.774s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.807s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.808s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.808s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.869s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.870s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/local_setup.ps1'
+[1.877s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/_local_setup_util_ps1.py'
+[1.886s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/setup.ps1'
+[1.895s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/local_setup.sh'
+[1.902s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/_local_setup_util_sh.py'
+[1.909s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/setup.sh'
+[1.928s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/local_setup.bash'
+[1.930s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/setup.bash'
+[1.939s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/local_setup.zsh'
+[1.946s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mushfiqul/AIS_OBS_Project/ros2_ws/install/setup.zsh'

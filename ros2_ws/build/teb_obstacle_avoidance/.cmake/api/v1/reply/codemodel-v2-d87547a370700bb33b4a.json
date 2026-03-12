@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-8b73f98b8021741d5e2f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "teb_obstacle_avoidance",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_teb_obstacle_avoidance_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_teb_obstacle_avoidance_egg-e4b85d7c56a844e4353c.json",
+					"name" : "ament_cmake_python_build_teb_obstacle_avoidance_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_teb_obstacle_avoidance::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_teb_obstacle_avoidance-0f6682f09c58b776090f.json",
+					"name" : "ament_cmake_python_symlink_teb_obstacle_avoidance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teb_obstacle_avoidance_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teb_obstacle_avoidance_uninstall-328f8502d6cb86a89739.json",
+					"name" : "teb_obstacle_avoidance_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-14fa5ba02fb51b7a5593.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/teb_obstacle_avoidance",
+		"source" : "/home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_obstacle_avoidance"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
