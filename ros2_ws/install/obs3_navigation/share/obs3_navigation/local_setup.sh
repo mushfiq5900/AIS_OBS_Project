@@ -1,1 +1,0 @@
-/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/obs3_navigation/ament_cmake_environment_hooks/local_setup.sh

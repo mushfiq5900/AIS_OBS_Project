@@ -1,20 +1,61 @@
 <?xml version="1.0" ?>
+<!--
+  OBS-3 Scenario: DYNAMIC OBSTACLES
+  Two cylinder models are pre-spawned at known positions.
+  The dynamic_obstacle_spawner.py node moves them via /gazebo/set_entity_state.
+  dyn_obs_1 crosses horizontally; dyn_obs_2 crosses diagonally.
+-->
 <sdf version="1.6">
   <world name="dynamic_obstacles">
-    <physics type="ode"><real_time_update_rate>1000.0</real_time_update_rate><max_step_size>0.001</max_step_size></physics>
+
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
     <include><uri>model://sun</uri></include>
     <include><uri>model://ground_plane</uri></include>
-    <model name="dyn_obs_1"><static>false</static><pose>2.0 2.0 0.25 0 0 0</pose>
-      <link name="link"><inertial><mass>1.0</mass></inertial>
-        <collision name="c"><geometry><cylinder><radius>0.2</radius><length>0.5</length></cylinder></geometry></collision>
-        <visual name="v"><geometry><cylinder><radius>0.2</radius><length>0.5</length></cylinder></geometry>
-        <material><ambient>0.2 0.8 0.2 1</ambient></material></visual>
-      </link></model>
-    <model name="dyn_obs_2"><static>false</static><pose>3.0 -1.5 0.25 0 0 0</pose>
-      <link name="link"><inertial><mass>1.0</mass></inertial>
-        <collision name="c"><geometry><cylinder><radius>0.2</radius><length>0.5</length></cylinder></geometry></collision>
-        <visual name="v"><geometry><cylinder><radius>0.2</radius><length>0.5</length></cylinder></geometry>
-        <material><ambient>0.9 0.7 0.1 1</ambient></material></visual>
-      </link></model>
+
+    <!-- Dynamic obstacle 1 — green cylinder, horizontal sweep -->
+    <model name="dyn_obs_1">
+      <static>false</static>
+      <pose>-1.5 2.0 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial><mass>1.0</mass></inertial>
+        <collision name="c">
+          <geometry>
+            <cylinder><radius>0.2</radius><length>0.5</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="v">
+          <geometry>
+            <cylinder><radius>0.2</radius><length>0.5</length></cylinder>
+          </geometry>
+          <material><ambient>0.2 0.8 0.2 1</ambient></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Dynamic obstacle 2 — yellow cylinder, diagonal sweep -->
+    <model name="dyn_obs_2">
+      <static>false</static>
+      <pose>3.0 -2.5 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial><mass>1.0</mass></inertial>
+        <collision name="c">
+          <geometry>
+            <cylinder><radius>0.2</radius><length>0.5</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="v">
+          <geometry>
+            <cylinder><radius>0.2</radius><length>0.5</length></cylinder>
+          </geometry>
+          <material><ambient>0.9 0.7 0.1 1</ambient></material>
+        </visual>
+      </link>
+    </model>
+
   </world>
 </sdf>

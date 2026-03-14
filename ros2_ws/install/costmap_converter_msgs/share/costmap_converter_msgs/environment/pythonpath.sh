@@ -1,1 +1,0 @@
-/home/mushfiqul/AIS_OBS_Project/ros2_ws/build/costmap_converter_msgs/ament_cmake_environment_hooks/pythonpath.sh

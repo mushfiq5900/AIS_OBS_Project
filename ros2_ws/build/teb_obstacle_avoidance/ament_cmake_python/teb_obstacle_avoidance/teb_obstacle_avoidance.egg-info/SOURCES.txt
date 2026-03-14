@@ -1,6 +1,0 @@
-setup.py
-teb_obstacle_avoidance/__init__.py
-teb_obstacle_avoidance.egg-info/PKG-INFO
-teb_obstacle_avoidance.egg-info/SOURCES.txt
-teb_obstacle_avoidance.egg-info/dependency_links.txt
-teb_obstacle_avoidance.egg-info/top_level.txt

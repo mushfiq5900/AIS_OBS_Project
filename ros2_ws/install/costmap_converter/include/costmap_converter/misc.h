@@ -1,1 +1,0 @@
-/home/mushfiqul/AIS_OBS_Project/ros2_ws/src/costmap_converter/costmap_converter/include/costmap_converter/misc.h

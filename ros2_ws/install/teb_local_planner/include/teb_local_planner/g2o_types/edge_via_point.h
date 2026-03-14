@@ -1,1 +1,0 @@
-/home/mushfiqul/AIS_OBS_Project/ros2_ws/src/teb_local_planner/teb_local_planner/include/teb_local_planner/g2o_types/edge_via_point.h
