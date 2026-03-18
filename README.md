@@ -1,54 +1,57 @@
 # OBS-3 — Obstacle Avoidance in Autonomous Navigation with ROS 2
 
 **Project Group:** OBS-3  
-**University:** Frankfurt University of Applied Sciences (Fra-UAS)  
-**Department:** Autonomous and Intelligent Systems (AIS)  
+**University:** Frankfurt University of Applied Sciences  
+**Department:** Information Technology  
+**Module:** Autonomous Intelligent Systems (AIS)  
 **Supervisor:** Prof. Dr. Peter Nauth  
 **Students:** Md Mushfiqul Islam · Rezoyana Islam Bonna  
-**Period:** 1 December 2025 – 20 March 2026  
 
 ---
 
 ## What This Project Does
 
-This project implements and evaluates the **TEB (Timed Elastic Band)** local
-planner for robot obstacle avoidance in ROS 2, compared against a **DWA
-(Dynamic Window Approach)** baseline. A TurtleBot3 Burger robot is simulated
-in Gazebo Classic across four scenarios:
+This project implements and evaluates the **MPPI (Model Predictive Path Integral)** controller
+as the primary local planner for robot obstacle avoidance in ROS 2, compared against a
+**DWA-equivalent baseline** using the Regulated Pure Pursuit Controller (RPP).
+
+> **Why MPPI instead of TEB?**  
+> The project originally targeted the Timed Elastic Band (TEB) planner. However, TEB does not
+> provide a stable ROS 2 Jazzy release due to breaking API changes in `libg2o` and `nav2_core`.
+> MPPI was adopted as the primary planner — it is natively supported in ROS 2 Jazzy and offers
+> conceptually similar trajectory optimisation via stochastic sampling. This incompatibility is
+> documented as a finding in the project report.
+
+A TurtleBot3 Burger robot is simulated in **Gazebo Harmonic** across four scenarios:
 
 | Scenario | Description |
 |----------|-------------|
-| `static` | Five fixed box obstacles between start and goal |
-| `narrow` | Two narrow wall-gated corridors (~0.6 m gap) |
-| `dynamic` | Two moving cylinder obstacles crossing the robot's path |
+| `static` | Five fixed box obstacles between start (0,0) and goal (4.0, 0.0) |
+| `narrow` | Two pairs of walls forming sequential corridors with a ~0.6 m gap |
+| `dynamic` | Two moving cylinders crossing the robot's path (0.4 m/s and 0.3 m/s) |
 | `mixed` | Static boxes + moving cylinders combined |
 
-Performance metrics (path length, time, collisions, smoothness, replans)
-are collected automatically and saved to CSV for analysis.
+Performance metrics (path length, time to goal, near-collisions, minimum obstacle distance,
+smoothness, replanning count) are collected automatically per run and saved to CSV.
 
 ---
 
 ## System Requirements
 
 | Item | Requirement |
-|------|------------|
-| OS | **Ubuntu 22.04 LTS** (Jammy) — recommended |
-| ROS 2 | **Humble Hawksbill** — most stable for TEB + TurtleBot3 |
-| Gazebo | Classic 11 (installed with Humble) |
+|------|-------------|
+| OS | **Ubuntu 24.04 LTS** (Noble) |
+| ROS 2 | **Jazzy Jalisco** |
+| Gazebo | **Harmonic** (via `ros-jazzy-ros-gz`) |
 | RAM | ≥ 8 GB |
 | Disk | ≥ 10 GB free |
-| Python | 3.10+ |
-
-> **Why Ubuntu 22.04 + Humble?**  
-> The `teb_local_planner` apt package is most reliably available for
-> ROS 2 Humble. If you are on Ubuntu 24.04, use ROS 2 Jazzy and follow
-> the Jazzy-specific notes below.
+| Python | 3.12+ |
 
 ---
 
-## PART 1 — Install ROS 2 Humble (Ubuntu 22.04)
+## PART 1 — Install ROS 2 Jazzy (Ubuntu 24.04)
 
-Open a terminal. Run each block one at a time. Do not skip any step.
+Open a terminal. Run each block one at a time.
 
 ### 1.1 Set locale
 
@@ -79,57 +82,69 @@ echo "deb [arch=$(dpkg --print-architecture) \
 
 ```bash
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y ros-humble-desktop ros-dev-tools python3-colcon-common-extensions
+sudo apt install -y ros-jazzy-desktop ros-dev-tools python3-colcon-common-extensions
 ```
 
 ### 1.4 Source ROS 2 in every terminal (add to .bashrc once)
 
 ```bash
-echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
 ---
 
-## PART 2 — Install All Project Dependencies
+## PART 2 — Environment Setup
 
-Run all of these in one go:
+```bash
+echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
+echo "export GAZEBO_MODEL_PATH=/usr/share/gazebo-11/models:$GAZEBO_MODEL_PATH" >> ~/.bashrc
+source ~/.bashrc
+```
+
+Verify everything is set:
+
+```bash
+printenv ROS_DISTRO        # jazzy
+gz sim --version           # Gazebo Sim, version 8.x.x
+echo $TURTLEBOT3_MODEL     # burger
+```
+
+---
+
+## PART 3 — Install All Project Dependencies
 
 ```bash
 # Navigation stack
 sudo apt install -y \
-    ros-humble-navigation2 \
-    ros-humble-nav2-bringup
+    ros-jazzy-navigation2 \
+    ros-jazzy-nav2-bringup
 
-# TEB local planner (the main planner this project evaluates)
-sudo apt install -y ros-humble-teb-local-planner
-
-# TurtleBot3 robot + Gazebo simulation packages
+# TurtleBot3 robot packages
 sudo apt install -y \
-    ros-humble-turtlebot3 \
-    ros-humble-turtlebot3-simulations \
-    ros-humble-turtlebot3-gazebo
+    ros-jazzy-turtlebot3 \
+    ros-jazzy-turtlebot3-simulations
 
-# Gazebo Classic + ROS bridge
+# Gazebo Harmonic + ROS-GZ bridge
 sudo apt install -y \
-    ros-humble-gazebo-ros-pkgs \
-    ros-humble-gazebo-ros
+    ros-jazzy-ros-gz \
+    ros-jazzy-ros-gz-bridge \
+    ros-jazzy-ros-gz-sim
 
 # Extra Nav2 utilities
 sudo apt install -y \
-    ros-humble-slam-toolbox \
-    ros-humble-nav2-map-server \
-    ros-humble-nav2-lifecycle-manager
+    ros-jazzy-nav2-map-server \
+    ros-jazzy-nav2-lifecycle-manager \
+    ros-jazzy-tf2-ros
 
 # Python tools
 pip3 install transforms3d
 ```
 
-> **On ROS 2 Jazzy (Ubuntu 24.04)** replace every `humble` above with `jazzy`.
-
 ---
 
-## PART 3 — Set Up the Workspace
+## PART 4 — Set Up the Workspace
 
 ### 3.1 Create workspace and copy the package
 
@@ -137,12 +152,8 @@ pip3 install transforms3d
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
 
-# If you downloaded the zip, extract it and copy the package:
-cp -r /path/to/teb_obstacle_avoidance  ~/ros2_ws/src/
-
-# If you are using Git:
-# git clone https://github.com/YOUR_USERNAME/AIS_OBS3_Project.git
-# cp -r AIS_OBS3_Project/ros2_ws/src/teb_obstacle_avoidance  ~/ros2_ws/src/
+# If you downloaded the zip, extract and copy the package:
+cp -r /path/to/teb_obstacle_avoidance ~/ros2_ws/src/
 ```
 
 ### 3.2 Verify the package structure
@@ -158,8 +169,8 @@ cp -r /path/to/teb_obstacle_avoidance  ~/ros2_ws/src/
         ├── launch/
         │   └── nav_simulation.launch.py
         ├── config/
-        │   ├── nav2_params_teb.yaml
-        │   └── nav2_params_dwa.yaml
+        │   ├── nav2_params_teb.yaml      ← MPPI controller config
+        │   └── nav2_params_dwa.yaml      ← RPP (DWA-equivalent) config
         ├── worlds/
         │   ├── scenario_static.world
         │   ├── scenario_narrow.world
@@ -177,11 +188,11 @@ cp -r /path/to/teb_obstacle_avoidance  ~/ros2_ws/src/
 
 ---
 
-## PART 4 — Build the Workspace
+## PART 5 — Build the Workspace
 
 ```bash
 cd ~/ros2_ws
-source /opt/ros/humble/setup.bash
+source /opt/ros/jazzy/setup.bash
 colcon build --symlink-install
 ```
 
@@ -198,7 +209,7 @@ colcon build --symlink-install
 
 ---
 
-## PART 5 — Configure Your Shell (do once)
+## PART 6 — Configure Your Shell (do once)
 
 Add these lines to `~/.bashrc` so every new terminal is ready:
 
@@ -206,10 +217,9 @@ Add these lines to `~/.bashrc` so every new terminal is ready:
 cat >> ~/.bashrc << 'EOF'
 
 # ROS 2 OBS-3 Project
-source /opt/ros/humble/setup.bash
+source /opt/ros/jazzy/setup.bash
 source ~/ros2_ws/install/setup.bash
 export TURTLEBOT3_MODEL=burger
-export GAZEBO_MODEL_PATH=/opt/ros/humble/share/turtlebot3_gazebo/models:$GAZEBO_MODEL_PATH
 EOF
 
 source ~/.bashrc
@@ -217,55 +227,90 @@ source ~/.bashrc
 
 ---
 
-## PART 6 — Running a Simulation
+## PART 7 — Running a Simulation
 
-### Launch command
+Each simulation run requires **two terminals** — one for the launch and one for the
+Gazebo Harmonic Twist bridge. This bridge is required because Nav2 publishes
+`geometry_msgs/Twist` while Gazebo Harmonic expects `geometry_msgs/TwistStamped`.
+
+---
+
+### Terminal 1 — Launch the simulation
+
+First kill any leftover processes from a previous run, then launch:
 
 ```bash
-ros2 launch teb_obstacle_avoidance nav_simulation.launch.py \
-    planner:=<teb|dwa> \
-    scenario:=<static|narrow|dynamic|mixed>
+killall ruby gz rviz2 python3 2>/dev/null; sleep 3
+ros2 launch teb_obstacle_avoidance nav_simulation.launch.py planner:=teb scenario:=static
 ```
+
+Replace `planner:=teb` with `planner:=dwa` and `scenario:=static` with any of
+`narrow`, `dynamic`, or `mixed` as needed.
+
+> Wait ~15 seconds after launching before moving to Terminal 2.
+
+---
+
+### Terminal 2 — Start the Twist bridge (Gazebo Harmonic compatibility)
+
+Open a new terminal and run:
+
+```bash
+source /opt/ros/jazzy/setup.bash
+source ~/ros2_ws/install/setup.bash
+ros2 run ros_gz_bridge parameter_bridge \
+    /cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist
+```
+
+Keep this terminal open for the entire run. The robot will not move without it.
+
+---
 
 ### The 8 experiment runs
 
+Repeat the Terminal 1 + Terminal 2 steps for each combination below:
+
 ```bash
-# --- TEB planner ---
+# --- MPPI (primary planner) ---
+# planner:=teb uses the MPPI config (nav2_params_teb.yaml)
 ros2 launch teb_obstacle_avoidance nav_simulation.launch.py planner:=teb scenario:=static
 ros2 launch teb_obstacle_avoidance nav_simulation.launch.py planner:=teb scenario:=narrow
 ros2 launch teb_obstacle_avoidance nav_simulation.launch.py planner:=teb scenario:=dynamic
 ros2 launch teb_obstacle_avoidance nav_simulation.launch.py planner:=teb scenario:=mixed
 
-# --- DWA baseline ---
+# --- DWA/RPP (baseline planner) ---
 ros2 launch teb_obstacle_avoidance nav_simulation.launch.py planner:=dwa scenario:=static
 ros2 launch teb_obstacle_avoidance nav_simulation.launch.py planner:=dwa scenario:=narrow
 ros2 launch teb_obstacle_avoidance nav_simulation.launch.py planner:=dwa scenario:=dynamic
 ros2 launch teb_obstacle_avoidance nav_simulation.launch.py planner:=dwa scenario:=mixed
 ```
 
+> **Note:** `planner:=teb` loads `nav2_params_teb.yaml` which configures the **MPPI controller**.
+> The filename is kept for historical reasons (TEB was the original intended planner).
+
 ---
 
-## PART 7 — Operating RViz (for each run)
+## PART 8 — Operating RViz (for each run)
 
-After the launch command, **wait ~15 seconds** for all windows to open.
+After both terminals are running:
 
 ### Step A — Set the robot's initial pose
 
 1. In the RViz window, click **"2D Pose Estimate"** (top toolbar)
-2. Click on the robot's position in the map view (near the centre/origin)
-3. **Hold and drag** the mouse in the direction the robot faces (positive X = right)
-4. Release — the green laser scan dots should align with the map
+2. Click on the robot's position in the map view (near the origin)
+3. Hold and drag the mouse in the direction the robot faces (positive X = right)
+4. Release — the cyan LiDAR scan dots should align with the map
 
 ### Step B — Send the navigation goal
 
 **Option 1 — Click in RViz (recommended for demos):**
-1. Click **"Nav2 Goal"** or **"2D Goal Pose"** in the toolbar
+1. Click **"Nav2 Goal"** in the toolbar
 2. Click on the destination (approximately x=4, y=0) and drag to set heading
 3. The robot will plan a path and start moving
 
 **Option 2 — Command line (for scripted experiments):**
 
-Open a second terminal (already sourced), then:
+Open a third terminal (sourced), then:
 ```bash
 ros2 run teb_obstacle_avoidance goal_sender.py \
     --ros-args -p x:=4.0 -p y:=0.0 -p yaw:=0.0
@@ -274,17 +319,21 @@ ros2 run teb_obstacle_avoidance goal_sender.py \
 ### Step C — Watch and record
 
 - Watch the robot navigate in both Gazebo and RViz
-- The terminal running the launch will show metrics logging
-- When the robot reaches the goal (or fails), a CSV row is written automatically
+- Metrics are logged automatically to CSV when the run ends
+- The Nav2 panel in RViz shows live distance to goal and elapsed time
 
 ### Step D — Stop and reset
 
-Press **Ctrl+C** in the launch terminal to stop everything, then start the
-next scenario.
+Press **Ctrl+C** in Terminal 1 to stop everything, then kill Terminal 2 as well.
+Before the next run always execute the cleanup command first:
+
+```bash
+killall ruby gz rviz2 python3 2>/dev/null; sleep 3
+```
 
 ---
 
-## PART 8 — Metrics and Results
+## PART 9 — Metrics and Results
 
 ### Where results are saved
 
@@ -295,7 +344,9 @@ ls ~/obs3_results/
 # metrics_teb_dynamic.csv
 # metrics_teb_mixed.csv
 # metrics_dwa_static.csv
-# ... etc.
+# metrics_dwa_narrow.csv
+# metrics_dwa_dynamic.csv
+# metrics_dwa_mixed.csv
 ```
 
 ### View results
@@ -308,21 +359,21 @@ cat ~/obs3_results/metrics_teb_static.csv
 
 | Column | Description |
 |--------|-------------|
-| `timestamp` | ISO-8601 wall-clock time |
-| `planner` | `teb` or `dwa` |
+| `timestamp` | ISO-8601 wall-clock time of run completion |
+| `planner` | `teb` (MPPI) or `dwa` (RPP) |
 | `scenario` | `static`, `narrow`, `dynamic`, or `mixed` |
 | `path_length_m` | Total distance driven (metres) |
 | `time_to_goal_s` | Seconds from launch to goal reached |
 | `near_collisions` | Laser readings < 0.30 m (proximity events) |
 | `collisions` | Laser readings < 0.12 m (contact events) |
-| `min_obstacle_dist_m` | Minimum laser range seen (metres) |
-| `smoothness_rad_s2` | Cumulative angular velocity changes (lower = smoother) |
+| `min_obstacle_dist_m` | Minimum laser range seen during run (metres) |
+| `smoothness_rad_s2` | Cumulative angular velocity changes — lower is smoother |
 | `replan_count` | Number of path replanning events |
-| `success` | `1` = goal reached, `0` = failed/aborted |
+| `success` | `1` = goal reached, `0` = failed / aborted |
 
 ---
 
-## PART 9 — Automated Batch Experiments (Optional)
+## PART 10 — Automated Batch Experiments (Optional)
 
 To run all 8 combinations automatically:
 
@@ -331,95 +382,73 @@ chmod +x ~/ros2_ws/src/teb_obstacle_avoidance/scripts/run_experiments.sh
 ~/ros2_ws/src/teb_obstacle_avoidance/scripts/run_experiments.sh
 ```
 
-> This takes approximately 30–40 minutes. Each run waits 20 s for Nav2
-> to initialise, sends the goal, waits up to 120 s for completion, then
-> kills the simulation and moves to the next combination.
+> This takes approximately 30–40 minutes. Each run waits 20 s for Nav2 to initialise,
+> sends the goal, waits up to 120 s for completion, then kills the simulation and moves
+> to the next combination. Remember to also start the Twist bridge (Terminal 2) before
+> running the batch script.
 
 ---
 
-## PART 10 — Troubleshooting
+## PART 11 — Troubleshooting
+
+### Problem: Robot does not move at all after setting the goal
+The Twist bridge (Terminal 2) is likely not running. Start it:
+```bash
+source /opt/ros/jazzy/setup.bash
+source ~/ros2_ws/install/setup.bash
+ros2 run ros_gz_bridge parameter_bridge \
+    /cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist
+```
+
+### Problem: Leftover processes from a previous run
+```bash
+killall ruby gz rviz2 python3 2>/dev/null; sleep 3
+```
 
 ### Problem: Gazebo opens but robot is invisible
 ```bash
-# Make sure TurtleBot3 model path is exported:
 export TURTLEBOT3_MODEL=burger
-export GAZEBO_MODEL_PATH=/opt/ros/humble/share/turtlebot3_gazebo/models
 # Then relaunch
 ```
 
-### Problem: "No map received" in RViz or AMCL not localising
+### Problem: "No map received" in RViz
 ```bash
-# Check if map_server is running:
+# Check map_server is running:
 ros2 node list | grep map_server
 
-# Check if the map topic is being published:
+# Check the map topic:
 ros2 topic echo /map --once
 ```
 
-### Problem: TEB plugin not found
-```bash
-sudo apt install -y ros-humble-teb-local-planner
-# Then rebuild:
-cd ~/ros2_ws && colcon build --symlink-install
-```
+### Problem: Nav2 starts but robot does not move after goal
+- Make sure you set the **2D Pose Estimate** first in RViz
+- Confirm the Twist bridge terminal is running
+- Check the static TF is being published: `ros2 run tf2_ros tf2_echo map odom`
 
-### Problem: Nav2 starts but robot doesn't move after goal
-- Make sure you set the **2D Pose Estimate** first
-- Wait for the laser scan (green dots) to appear and align with the map
-- Check that AMCL is running: `ros2 node list | grep amcl`
-
-### Problem: "colcon build" fails
+### Problem: `colcon build` fails
 ```bash
 cd ~/ros2_ws
 rm -rf build/ install/ log/
-source /opt/ros/humble/setup.bash
+source /opt/ros/jazzy/setup.bash
 colcon build --symlink-install
 ```
 
-### Problem: Leftover Gazebo processes after Ctrl+C
+### Problem: Gazebo Harmonic crashes or freezes
 ```bash
-killall gzserver gzclient
+killall ruby gz rviz2 python3 2>/dev/null; sleep 3
+# Then relaunch
 ```
 
 ---
 
-## PART 11 — Git Setup
+## Scenario Reference
 
-### First time (create the repo)
-
-```bash
-cd ~/ros2_ws/src/teb_obstacle_avoidance
-git init
-git add .
-git commit -m "Initial commit: OBS-3 TEB vs DWA obstacle avoidance project"
-
-# Push to GitHub/GitLab — create the repo online first, then:
-git remote add origin https://github.com/YOUR_USERNAME/AIS_OBS3_Project.git
-git push -u origin main
-```
-
-### .gitignore (already included in the zip)
-
-The `.gitignore` at the repo root excludes:
-```
-build/
-install/
-log/
-__pycache__/
-*.pyc
-obs3_results/
-```
-
----
-
-## Scenario Goals Reference
-
-| Scenario | Robot start | Navigation goal |
-|----------|-------------|-----------------|
-| `static` | x=0, y=0 | x=4.0, y=0.0 |
-| `narrow` | x=0, y=0 | x=4.5, y=0.0 |
-| `dynamic`| x=0, y=0 | x=4.0, y=0.0 |
-| `mixed`  | x=0, y=0 | x=4.0, y=0.0 |
+| Scenario | Robot start | Navigation goal | Obstacles |
+|----------|-------------|-----------------|-----------|
+| `static` | x=0, y=0 | x=4.0, y=0.0 | 5 fixed boxes |
+| `narrow` | x=0, y=0 | x=4.0, y=0.0 | 2 wall pairs (0.6 m gap) |
+| `dynamic` | x=0, y=0 | x=4.0, y=0.0 | 2 moving cylinders |
+| `mixed` | x=0, y=0 | x=4.0, y=0.0 | Static boxes + moving cylinders |
 
 ---
 
@@ -427,20 +456,26 @@ obs3_results/
 
 ```
 SOURCE (every terminal):
-  source /opt/ros/humble/setup.bash
+  source /opt/ros/jazzy/setup.bash
   source ~/ros2_ws/install/setup.bash
   export TURTLEBOT3_MODEL=burger
 
 BUILD:
   cd ~/ros2_ws && colcon build --symlink-install
 
-LAUNCH TEB + STATIC:
+CLEANUP (before every run):
+  killall ruby gz rviz2 python3 2>/dev/null; sleep 3
+
+LAUNCH (Terminal 1):
   ros2 launch teb_obstacle_avoidance nav_simulation.launch.py planner:=teb scenario:=static
 
-LAUNCH DWA + DYNAMIC:
-  ros2 launch teb_obstacle_avoidance nav_simulation.launch.py planner:=dwa scenario:=dynamic
+TWIST BRIDGE (Terminal 2 — required):
+  source /opt/ros/jazzy/setup.bash
+  source ~/ros2_ws/install/setup.bash
+  ros2 run ros_gz_bridge parameter_bridge \
+      /cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist
 
-SEND GOAL (in second terminal):
+SEND GOAL (Terminal 3 — optional):
   ros2 run teb_obstacle_avoidance goal_sender.py --ros-args -p x:=4.0 -p y:=0.0
 
 VIEW RESULTS:
